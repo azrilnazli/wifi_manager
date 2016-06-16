@@ -1,0 +1,3563 @@
+2016-06-15 18:40:39 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [/var/www/html/cakephp-2.8.5/app/Controller/AppController.php, line 52]
+2016-06-15 18:40:39 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 52)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 52, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 52, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-15 18:44:18 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /index.php/Users/css/Users/css/cake.generic.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-06-15 18:44:18 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /index.php/Users/img/Users/img/cake.power.gif
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-06-15 18:44:18 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'favicon.ico',
+)
+Request URL: /index.php/Users/Users/favicon.ico
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-06-15 18:46:20 Error: [MissingActionException] Action UsersController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'css',
+)
+Request URL: /index.php/Users/css/Users/css/cake.generic.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-06-15 18:46:20 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /index.php/Users/img/Users/img/cake.power.gif
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-06-15 19:06:29 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin/pages/blank
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:08:49 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:08:50 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:08:50 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:08:50 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:08:50 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:08:50 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:08:50 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:08:50 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:18:20 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:18:20 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:18:20 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:18:20 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:18:20 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:18:20 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:18:20 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:20:30 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:20:30 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:20:30 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:20:30 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:20:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:20:30 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:20:30 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:20:30 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:20:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:21:32 Error: [MissingViewException] View file "Users/home.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/home.ctp',
+)
+Request URL: /Users/home
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-06-15 19:21:55 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:21:55 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:21:55 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:21:55 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:21:55 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:21:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:21:55 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:21:55 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:23:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:24:08 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:24:08 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:24:08 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:24:08 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:24:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:24:08 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:24:09 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:24:09 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:27:00 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:27:00 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:27:00 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:27:00 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:27:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:27:00 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:27:01 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:27:01 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:27:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:27:05 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:27:05 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:27:05 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:27:05 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:27:05 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:27:05 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:27:05 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:28:58 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:28:58 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:28:58 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:28:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:28:58 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:28:58 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:28:58 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:28:58 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:35 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:35 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:35 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:35 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:35 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:35 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:35 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:45 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:45 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:45 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:45 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:45 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:45 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:45 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:59 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:59 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:59 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:59 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:59 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:59 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:32:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:00 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:00 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:20 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:20 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:20 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:20 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:20 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:20 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:20 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:20 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:21 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:22 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:22 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:22 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:22 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:22 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:22 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:22 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:28 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:28 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:28 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:28 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:28 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:28 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:28 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:33 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:33 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:33 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:33 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:33 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:34 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:34 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:41 Error: [MissingControllerException] Controller class CakephpController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:41 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:41 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:41 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:41 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:41 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:41 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:33:41 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:06 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:06 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:06 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:06 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:06 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:06 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:06 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:33 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:33 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:33 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:33 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:33 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:33 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:33 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:45 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:45 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:45 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:45 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:45 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:45 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:45 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:55 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:55 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:55 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:55 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:55 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:55 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:34:55 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:35:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:35:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:35:02 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:35:02 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:35:02 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:35:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:35:02 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:35:02 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:35:03 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:35:03 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:46:36 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:46:36 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:46:36 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:46:36 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:46:36 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:46:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:46:37 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:46:37 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:47:04 Error: [MissingActionException] Action UsersController::homeddd() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'homeddd',
+)
+Request URL: /Users/homeddd
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-06-15 19:47:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:51:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:52:08 Error: [MissingViewException] View file "Users/home.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/home.ctp',
+)
+Request URL: /Users/home
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-06-15 19:52:34 Error: [MissingViewException] View file "Users/home.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/home.ctp',
+)
+Request URL: /Users/home
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-06-15 19:53:08 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:53:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/theme/admin/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:53:08 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:53:08 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:53:08 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:53:08 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:53:08 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:53:08 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:53:41 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:53:41 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:53:41 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:53:41 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:53:41 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:53:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:53:41 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:53:41 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 19:54:05 Error: [MissingControllerException] Controller class ThemeController could not be found.
+Exception Attributes: array (
+  'class' => 'ThemeController',
+  'plugin' => NULL,
+)
+Request URL: /theme/admin/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:02:28 Error: [MissingControllerException] Controller class ThemeController could not be found.
+Exception Attributes: array (
+  'class' => 'ThemeController',
+  'plugin' => NULL,
+)
+Request URL: /theme/admin/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:06:13 Error: [MissingControllerException] Controller class ThemeController could not be found.
+Exception Attributes: array (
+  'class' => 'ThemeController',
+  'plugin' => NULL,
+)
+Request URL: /theme/admin/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:06:29 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:06:29 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:06:29 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:06:29 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:06:29 Error: [MissingControllerException] Controller class ThemeController could not be found.
+Exception Attributes: array (
+  'class' => 'ThemeController',
+  'plugin' => NULL,
+)
+Request URL: /theme/admin/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:06:29 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:06:29 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:06:29 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:06:39 Error: [MissingControllerException] Controller class ThemeController could not be found.
+Exception Attributes: array (
+  'class' => 'ThemeController',
+  'plugin' => NULL,
+)
+Request URL: /theme/admin/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:07:54 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:07:54 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:07:54 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:07:54 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:07:54 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:07:54 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:07:54 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:09:41 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:09:41 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:09:41 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:09:41 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:09:41 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:09:41 Error: [MissingControllerException] Controller class ThemeController could not be found.
+Exception Attributes: array (
+  'class' => 'ThemeController',
+  'plugin' => NULL,
+)
+Request URL: /theme/admin/fonts/fontawesome-webfont.woff?v=4.2.0
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:09:41 Error: [MissingControllerException] Controller class ThemeController could not be found.
+Exception Attributes: array (
+  'class' => 'ThemeController',
+  'plugin' => NULL,
+)
+Request URL: /theme/admin/fonts/fontawesome-webfont.ttf?v=4.2.0
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:12:49 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:12:49 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:12:49 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:12:49 Error: [MissingControllerException] Controller class ThemeController could not be found.
+Exception Attributes: array (
+  'class' => 'ThemeController',
+  'plugin' => NULL,
+)
+Request URL: /theme/admin/fonts/fontawesome-webfont.woff?v=4.2.0
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:12:49 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:12:49 Error: [MissingControllerException] Controller class ThemeController could not be found.
+Exception Attributes: array (
+  'class' => 'ThemeController',
+  'plugin' => NULL,
+)
+Request URL: /theme/admin/fonts/fontawesome-webfont.ttf?v=4.2.0
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:15:57 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:15:57 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:15:57 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:15:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:15:57 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:16:11 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:16:42 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:16:42 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:16:42 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:16:42 Error: [MissingControllerException] Controller class ThemeController could not be found.
+Exception Attributes: array (
+  'class' => 'ThemeController',
+  'plugin' => NULL,
+)
+Request URL: /theme/admin/js/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:16:42 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:16:52 Error: [MissingControllerException] Controller class ThemeController could not be found.
+Exception Attributes: array (
+  'class' => 'ThemeController',
+  'plugin' => NULL,
+)
+Request URL: /theme/admin/js/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:18:25 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:18:25 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:18:26 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:18:26 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:20:06 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:20:06 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:20:06 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:20:06 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:21:56 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:21:56 Error: [MissingControllerException] Controller class ThemeController could not be found.
+Exception Attributes: array (
+  'class' => 'ThemeController',
+  'plugin' => NULL,
+)
+Request URL: /theme/admin/js/sb-admin-2.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:21:56 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:22:24 Error: [MissingControllerException] Controller class ThemeController could not be found.
+Exception Attributes: array (
+  'class' => 'ThemeController',
+  'plugin' => NULL,
+)
+Request URL: /theme/admin/js/sb-admin-2.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 20:24:23 Error: [MissingActionException] Action UsersController::index.html() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index.html',
+)
+Request URL: /Users/index.html
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-06-15 20:32:50 Error: [MissingViewException] View file "Users/home.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/home.ctp',
+)
+Request URL: /Users/home
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-06-15 20:33:03 Error: [MissingViewException] View file "Users/home.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/home.ctp',
+)
+Request URL: /Users/home
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-06-15 20:33:06 Error: [MissingViewException] View file "Users/home.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/home.ctp',
+)
+Request URL: /Users/home
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-06-15 20:33:27 Error: [MissingViewException] View file "Users/home.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/home.ctp',
+)
+Request URL: /Users/home
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-06-15 20:58:52 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/html/cakephp-2.8.5/app/Controller/AppController.php, line 51]
+2016-06-15 20:58:52 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /Users/home
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 51, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 51, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-15 20:59:27 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/html/cakephp-2.8.5/app/Controller/AppController.php, line 50]
+2016-06-15 20:59:27 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /Users/home
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 50, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 50, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-15 21:26:33 Error: [MissingControllerException] Controller class UsersgroupsController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersgroupsController',
+  'plugin' => NULL,
+)
+Request URL: /usersgroups
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 21:27:48 Error: [MissingViewException] View file "Usergroups/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Usergroups/index.ctp',
+)
+Request URL: /usergroups
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsergroupsController), Object(CakeRequest))
+#4 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-06-15 21:36:17 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/var/www/html/cakephp-2.8.5/app/Controller/UsersController.php, line 21]
+2016-06-15 21:36:17 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 21, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 21, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-15 21:37:21 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [/var/www/html/cakephp-2.8.5/app/Controller/AppController.php, line 35]
+2016-06-15 21:37:21 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 35, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 35, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-15 22:02:39 Error: Fatal Error (1): Call to a member function success() on a non-object in [/var/www/html/cakephp-2.8.5/app/Controller/UsersController.php, line 29]
+2016-06-15 22:02:39 Error: [FatalErrorException] Call to a member function success() on a non-object
+Request URL: /users/add
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 29, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 29, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-15 22:06:47 Error: Fatal Error (1): Call to a member function success() on a non-object in [/var/www/html/cakephp-2.8.5/app/Controller/UsersController.php, line 29]
+2016-06-15 22:06:47 Error: [FatalErrorException] Call to a member function success() on a non-object
+Request URL: /users/add
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 29, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 29, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-15 22:11:37 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /users/home
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-06-15 22:12:32 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /users/home
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-06-15 22:14:28 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /users/home
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-06-15 22:15:30 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /users/home
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-06-15 22:19:46 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /users/home
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-06-15 22:30:05 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-06-15 22:32:01 Error: [MissingActionException] Action UsersController::index.html() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index.html',
+)
+Request URL: /users/index.html
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-06-15 22:43:45 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.usergroup_id' in 'on clause'
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#6 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php(130): Model->find('first', Array)
+#7 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Component/Auth/FormAuthenticate.php(79): BaseAuthenticate->_findUser('admin', 'admin')
+#8 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Component/AuthComponent.php(766): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Component/AuthComponent.php(611): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/html/cakephp-2.8.5/app/Controller/UsersController.php(15): AuthComponent->login()
+#11 [internal function]: UsersController->login()
+#12 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2016-06-15 22:44:27 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.usergroup_id' in 'on clause'
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#6 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php(130): Model->find('first', Array)
+#7 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Component/Auth/FormAuthenticate.php(79): BaseAuthenticate->_findUser('admin', 'password')
+#8 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Component/AuthComponent.php(766): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Component/AuthComponent.php(611): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/html/cakephp-2.8.5/app/Controller/UsersController.php(15): AuthComponent->login()
+#11 [internal function]: UsersController->login()
+#12 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2016-06-15 22:52:03 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Layouts/login.ctp, line 17]
+2016-06-15 22:52:03 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/c...', 17)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/c...', 17, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/c...', 17, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-15 22:59:33 Error: [MissingActionException] Action UsersController::admin() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin',
+)
+Request URL: /users/admin
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-06-15 22:59:37 Error: [MissingActionException] Action UsersController::addd() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'addd',
+)
+Request URL: /users/addd
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-06-15 23:24:22 Error: [MissingControllerException] Controller class Sb-adminController could not be found.
+Exception Attributes: array (
+  'class' => 'Sb-adminController',
+  'plugin' => NULL,
+)
+Request URL: /sb-admin/bower_components/datatables-responsive/css/dataTables.responsive.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 23:24:25 Error: [MissingControllerException] Controller class Sb-adminController could not be found.
+Exception Attributes: array (
+  'class' => 'Sb-adminController',
+  'plugin' => NULL,
+)
+Request URL: /sb-admin/bower_components/datatables-responsive/css/dataTables.responsive.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 23:36:28 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 23:36:28 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/datatables-responsive/css/dataTables.responsive.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 23:36:28 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/css/sb-admin-2.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 23:36:28 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 23:36:28 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 23:36:28 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 23:36:29 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/bootstrap/dist/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 23:36:29 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 23:36:29 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/datatables/media/js/jquery.dataTables.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 23:36:29 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/metisMenu/dist/metisMenu.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 23:36:29 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/datatables-responsive/js/dataTables.responsive.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 23:36:29 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /dist/js/sb-admin-2.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-15 23:36:29 Error: [MissingControllerException] Controller class BowerComponentsController could not be found.
+Exception Attributes: array (
+  'class' => 'BowerComponentsController',
+  'plugin' => NULL,
+)
+Request URL: /bower_components/jquery/dist/jquery.min.js
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-16 00:20:02 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order = ('asc')    LIMIT 20' at line 1
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate(Array, Array, Array)
+#8 /var/www/html/cakephp-2.8.5/app/Controller/UsersController.php(39): Controller->paginate(Array)
+#9 [internal function]: UsersController->index()
+#10 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-06-16 00:20:53 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW, expecting ')' in [/var/www/html/cakephp-2.8.5/app/Controller/UsersController.php, line 35]
+2016-06-16 00:20:53 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW, expecting ')'
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 35, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 35, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-16 00:21:18 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order = ('asc')    LIMIT 20' at line 1
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate(Array, Array, Array)
+#8 /var/www/html/cakephp-2.8.5/app/Controller/UsersController.php(39): Controller->paginate(Array)
+#9 [internal function]: UsersController->index()
+#10 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-06-16 00:21:38 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order = ('asc')    LIMIT 20' at line 1
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate(Array, Array, Array)
+#8 /var/www/html/cakephp-2.8.5/app/Controller/UsersController.php(39): Controller->paginate(Array)
+#9 [internal function]: UsersController->index()
+#10 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-06-16 00:22:07 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'fields' in 'where clause'
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/cakephp-2.8.5/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate(Array, Array, Array)
+#8 /var/www/html/cakephp-2.8.5/app/Controller/UsersController.php(38): Controller->paginate(Array)
+#9 [internal function]: UsersController->index()
+#10 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-06-16 00:32:28 Error: Fatal Error (4): syntax error, unexpected ',' in [/var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Users/index.ctp, line 22]
+2016-06-16 00:32:28 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 22, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 22, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-16 00:33:12 Error: Fatal Error (4): syntax error, unexpected ',' in [/var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Users/index.ctp, line 23]
+2016-06-16 00:33:12 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 23, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 23, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-16 00:33:53 Error: Fatal Error (4): syntax error, unexpected ',' in [/var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Users/index.ctp, line 23]
+2016-06-16 00:33:53 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 23, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 23, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-16 00:34:08 Error: Fatal Error (4): syntax error, unexpected ',' in [/var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Users/index.ctp, line 23]
+2016-06-16 00:34:08 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 23, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 23, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-16 00:34:27 Error: Fatal Error (1): Function name must be a string in [/var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Users/index.ctp, line 30]
+2016-06-16 00:34:27 Error: [FatalErrorException] Function name must be a string
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Function name m...', '/var/www/html/c...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', '/var/www/html/c...', 30, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Function name m...', '/var/www/html/c...', 30, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-16 00:56:57 Error: [MissingActionException] Action UsersController::buttons.html() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'buttons.html',
+)
+Request URL: /users/buttons.html
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-06-16 00:57:03 Error: [MissingActionException] Action UsersController::buttons.html() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'buttons.html',
+)
+Request URL: /users/buttons.html
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-06-16 00:58:41 Error: [MissingControllerException] Controller class Sb-adminController could not be found.
+Exception Attributes: array (
+  'class' => 'Sb-adminController',
+  'plugin' => NULL,
+)
+Request URL: /sb-admin/bower_components/datatables-responsive/css/dataTables.responsive.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-16 01:09:57 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting ')' in [/var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Users/index.ctp, line 29]
+2016-06-16 01:09:57 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting ')'
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 29, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 29, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-16 01:46:15 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting ')' in [/var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Users/index.ctp, line 14]
+2016-06-16 01:46:15 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting ')'
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 14, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 14, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-16 01:46:56 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [/var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Users/index.ctp, line 14]
+2016-06-16 01:46:56 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 14, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 14, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-16 02:07:49 Error: [MissingControllerException] Controller class ThemeController could not be found.
+Exception Attributes: array (
+  'class' => 'ThemeController',
+  'plugin' => NULL,
+)
+Request URL: /theme/sb-admin/bower_components/bootstrap/dist/css/bootstrapi.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-16 02:08:36 Error: [MissingControllerException] Controller class Sb-adminController could not be found.
+Exception Attributes: array (
+  'class' => 'Sb-adminController',
+  'plugin' => NULL,
+)
+Request URL: /sb-admin/bower_components/datatables-responsive/css/dataTables.responsive.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-16 02:08:39 Error: [MissingControllerException] Controller class Sb-adminController could not be found.
+Exception Attributes: array (
+  'class' => 'Sb-adminController',
+  'plugin' => NULL,
+)
+Request URL: /sb-admin/css/timeline.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-16 02:08:43 Error: [MissingControllerException] Controller class Sb-adminController could not be found.
+Exception Attributes: array (
+  'class' => 'Sb-adminController',
+  'plugin' => NULL,
+)
+Request URL: /sb-admin/bower_components/datatables-responsive/css/dataTables.responsive.css
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-16 02:39:00 Error: Fatal Error (4): syntax error, unexpected ')', expecting T_VARIABLE or '$' in [/var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Elements/paginator.ctp, line 13]
+2016-06-16 02:39:00 Error: [FatalErrorException] syntax error, unexpected ')', expecting T_VARIABLE or '$'
+Request URL: /users/index
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 13, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 13, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-16 03:16:52 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting ')' in [/var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Users/index.ctp, line 38]
+2016-06-16 03:16:52 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting ')'
+Request URL: /users/index/sort:User.username/direction:asc
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 38, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 38, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-16 03:54:48 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Users/add.ctp, line 16]
+2016-06-16 03:54:48 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /Users/add
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 16, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 16, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-16 03:56:32 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Users/add.ctp, line 13]
+2016-06-16 03:56:32 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /Users/add
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 13, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 13, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-16 04:13:52 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [/var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Users/add.ctp, line 32]
+2016-06-16 04:13:52 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /Users/add
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 32, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 32, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-16 04:30:19 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Users/add.ctp, line 40]
+2016-06-16 04:30:19 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /Users/add
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 40, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 40, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-16 04:30:31 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Users/add.ctp, line 40]
+2016-06-16 04:30:31 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /Users/add
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 40, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 40, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-16 05:21:48 Error: Fatal Error (1): Call to a member function success() on a non-object in [/var/www/html/cakephp-2.8.5/app/Controller/UsersController.php, line 82]
+2016-06-16 05:21:48 Error: [FatalErrorException] Call to a member function success() on a non-object
+Request URL: /Users/edit/14
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 82)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 82, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 82, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-16 05:34:32 Error: Fatal Error (4): syntax error, unexpected T_ECHO in [/var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Users/index.ctp, line 29]
+2016-06-16 05:34:32 Error: [FatalErrorException] syntax error, unexpected T_ECHO
+Request URL: /Users/index
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 29, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 29, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-16 05:34:53 Error: Fatal Error (4): syntax error, unexpected '{', expecting ')' in [/var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Users/index.ctp, line 31]
+2016-06-16 05:34:53 Error: [FatalErrorException] syntax error, unexpected '{', expecting ')'
+Request URL: /Users/index
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 31, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 31, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-16 05:35:42 Error: [MissingControllerException] Controller class RecipesController could not be found.
+Exception Attributes: array (
+  'class' => 'RecipesController',
+  'plugin' => NULL,
+)
+Request URL: /recipes/delete/13
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-16 05:36:02 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /users/delete/13
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/Controller/UsersController.php(98): CakeRequest->allowMethod('post')
+#1 [internal function]: UsersController->delete('13')
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2016-06-16 05:36:44 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /users/delete/13
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/Controller/UsersController.php(98): CakeRequest->allowMethod('put')
+#1 [internal function]: UsersController->delete('13')
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2016-06-16 05:37:25 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /Users/delete/13
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/Controller/UsersController.php(98): CakeRequest->allowMethod('put')
+#1 [internal function]: UsersController->delete('13')
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2016-06-16 05:38:18 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /Users/delete
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/Controller/UsersController.php(98): CakeRequest->allowMethod('put')
+#1 [internal function]: UsersController->delete()
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2016-06-16 05:39:39 Error: Fatal Error (1): Call to a member function success() on a non-object in [/var/www/html/cakephp-2.8.5/app/Controller/UsersController.php, line 105]
+2016-06-16 05:39:39 Error: [FatalErrorException] Call to a member function success() on a non-object
+Request URL: /Users/delete/13
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 105)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 105, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 105, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-16 05:40:23 Error: [NotFoundException] Invalid user
+Request URL: /Users/delete/13
+Stack Trace:
+#0 [internal function]: UsersController->delete('13')
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-06-16 05:42:01 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /Users/delete/15
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/app/Controller/UsersController.php(98): CakeRequest->allowMethod('put')
+#1 [internal function]: UsersController->delete('15')
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2016-06-16 06:07:05 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Users/index.ctp, line 75]
+2016-06-16 06:07:05 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /Users
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 75)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 75, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 75, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-16 06:31:03 Error: [MissingViewException] View file "Users/mass_delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/mass_delete.ctp',
+)
+Request URL: /Users/mass_delete
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-06-16 06:31:15 Error: [MissingViewException] View file "Users/mass_delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/mass_delete.ctp',
+)
+Request URL: /Users/mass_delete
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-06-16 06:31:50 Error: [MissingViewException] View file "Users/mass_delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/mass_delete.ctp',
+)
+Request URL: /Users/mass_delete
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-06-16 06:32:12 Error: [MissingViewException] View file "Users/mass_delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/mass_delete.ctp',
+)
+Request URL: /Users/mass_delete
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-06-16 06:32:49 Error: [MissingViewException] View file "Users/mass_delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/mass_delete.ctp',
+)
+Request URL: /Users/mass_delete
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-06-16 06:33:05 Error: [MissingViewException] View file "Users/mass_delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/mass_delete.ctp',
+)
+Request URL: /Users/mass_delete
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-06-16 06:33:40 Error: [MissingViewException] View file "Users/mass_delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/mass_delete.ctp',
+)
+Request URL: /Users/mass_delete
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-06-16 06:34:02 Error: [MissingViewException] View file "Users/mass_delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/mass_delete.ctp',
+)
+Request URL: /Users/mass_delete
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-06-16 06:34:36 Error: [MissingViewException] View file "Users/mass_delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/mass_delete.ctp',
+)
+Request URL: /Users/mass_delete
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-06-16 07:20:25 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Users/index.ctp, line 19]
+2016-06-16 07:20:25 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /Users/index/sort:User.id/direction:desc
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 19, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 19, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-16 08:27:23 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [/var/www/html/cakephp-2.8.5/app/Controller/UsersController.php, line 54]
+2016-06-16 08:27:23 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /Users/search/u/page:2/sort:User.id/direction:desc
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 54, Array)
+#2 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 54, Array)
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-16 08:41:02 Error: [NotFoundException] Not Found
+Request URL: /Users/search/%3Fkeyword%3Du/page:2/sort:User.id/direction:desc
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate(NULL, Array, Array)
+#1 /var/www/html/cakephp-2.8.5/app/Controller/UsersController.php(62): Controller->paginate()
+#2 [internal function]: UsersController->search('?keyword=u')
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-06-16 08:42:50 Error: [MissingHelperException] Helper class namedHelper could not be found.
+Exception Attributes: array (
+  'class' => 'namedHelper',
+  'plugin' => false,
+)
+Request URL: /Users/search?keyword=u
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('named')
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(858): HelperCollection->__isset('named')
+#2 /var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Elements/paginator.ctp(2): View->__get('named')
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(971): include('/var/www/html/c...')
+#4 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/c...', Array)
+#5 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(1224): View->_render('/var/www/html/c...', Array)
+#6 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(418): View->_renderElement('/var/www/html/c...', Array, Array)
+#7 /var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Users/index.ctp(28): View->element('paginator')
+#8 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(971): include('/var/www/html/c...')
+#9 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/c...', Array)
+#10 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(473): View->_render('/var/www/html/c...')
+#11 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(963): View->render('index', NULL)
+#12 /var/www/html/cakephp-2.8.5/app/Controller/UsersController.php(68): Controller->render('index')
+#13 [internal function]: UsersController->search()
+#14 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#15 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#16 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#17 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2016-06-16 08:44:01 Error: [MissingHelperException] Helper class paramHelper could not be found.
+Exception Attributes: array (
+  'class' => 'paramHelper',
+  'plugin' => false,
+)
+Request URL: /Users/search?keyword=u
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('param')
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(858): HelperCollection->__isset('param')
+#2 /var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Elements/paginator.ctp(2): View->__get('param')
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(971): include('/var/www/html/c...')
+#4 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/c...', Array)
+#5 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(1224): View->_render('/var/www/html/c...', Array)
+#6 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(418): View->_renderElement('/var/www/html/c...', Array, Array)
+#7 /var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Users/index.ctp(28): View->element('paginator')
+#8 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(971): include('/var/www/html/c...')
+#9 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/c...', Array)
+#10 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(473): View->_render('/var/www/html/c...')
+#11 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(963): View->render('index', NULL)
+#12 /var/www/html/cakephp-2.8.5/app/Controller/UsersController.php(68): Controller->render('index')
+#13 [internal function]: UsersController->search()
+#14 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#15 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#16 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#17 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2016-06-16 08:44:15 Error: [MissingHelperException] Helper class paramHelper could not be found.
+Exception Attributes: array (
+  'class' => 'paramHelper',
+  'plugin' => false,
+)
+Request URL: /Users/search?keyword=u
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('param')
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(858): HelperCollection->__isset('param')
+#2 /var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Elements/paginator.ctp(2): View->__get('param')
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(971): include('/var/www/html/c...')
+#4 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/c...', Array)
+#5 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(1224): View->_render('/var/www/html/c...', Array)
+#6 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(418): View->_renderElement('/var/www/html/c...', Array, Array)
+#7 /var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Users/index.ctp(28): View->element('paginator')
+#8 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(971): include('/var/www/html/c...')
+#9 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/c...', Array)
+#10 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(473): View->_render('/var/www/html/c...')
+#11 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(963): View->render('index', NULL)
+#12 /var/www/html/cakephp-2.8.5/app/Controller/UsersController.php(68): Controller->render('index')
+#13 [internal function]: UsersController->search()
+#14 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#15 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#16 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#17 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2016-06-16 08:49:02 Error: [MissingHelperException] Helper class queryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'queryHelper',
+  'plugin' => false,
+)
+Request URL: /Users/search?keyword=u
+Stack Trace:
+#0 /var/www/html/cakephp-2.8.5/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('query')
+#1 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(858): HelperCollection->__isset('query')
+#2 /var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Elements/paginator.ctp(4): View->__get('query')
+#3 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(971): include('/var/www/html/c...')
+#4 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/c...', Array)
+#5 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(1224): View->_render('/var/www/html/c...', Array)
+#6 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(418): View->_renderElement('/var/www/html/c...', Array, Array)
+#7 /var/www/html/cakephp-2.8.5/app/View/Themed/SbAdmin/Users/index.ctp(28): View->element('paginator')
+#8 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(971): include('/var/www/html/c...')
+#9 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/c...', Array)
+#10 /var/www/html/cakephp-2.8.5/lib/Cake/View/View.php(473): View->_render('/var/www/html/c...')
+#11 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(963): View->render('index', NULL)
+#12 /var/www/html/cakephp-2.8.5/app/Controller/UsersController.php(68): Controller->render('index')
+#13 [internal function]: UsersController->search()
+#14 /var/www/html/cakephp-2.8.5/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#15 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#16 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#17 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
