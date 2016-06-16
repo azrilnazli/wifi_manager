@@ -72,7 +72,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => '',
-		'database' => 'wifi_management',
+		'database' => 'wifi_manager',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
