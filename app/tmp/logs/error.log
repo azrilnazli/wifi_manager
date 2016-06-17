@@ -3561,3 +3561,12 @@ Stack Trace:
 #16 /var/www/html/cakephp-2.8.5/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #17 /var/www/html/cakephp-2.8.5/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #18 {main}
+2016-06-16 23:39:01 Error: [MissingControllerException] Controller class RadcheckController could not be found.
+Exception Attributes: array (
+  'class' => 'RadcheckController',
+  'plugin' => NULL,
+)
+Request URL: /radcheck
+Stack Trace:
+#0 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
