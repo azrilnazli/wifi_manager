@@ -6,6 +6,16 @@ App::uses('AppModel', 'Model');
  */
 class Radcheck extends AppModel {
 
+    public $belongsTo = array(
+        'Hotspot' => array(
+            'className' => 'Hotspot',
+            'foreignKey' => FALSE,
+            'conditions' => 'Hotspot.username=Radcheck.username',
+            'fields' => '',
+            'order' => ''
+        )
+    );
+
 /**
  * Use table
  *

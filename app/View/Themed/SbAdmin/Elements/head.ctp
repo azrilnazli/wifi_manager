@@ -9,6 +9,9 @@
     <!-- Bootstrap Core CSS -->
     <link href="/theme/sb-admin/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
+    <!-- Bootstrap Datepicker -->
+    <link href="/css/datepicker.css" rel="stylesheet">    
+
     <!-- MetisMenu CSS -->
     <link href="/theme/sb-admin/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
 

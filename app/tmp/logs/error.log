@@ -3570,3 +3570,210 @@ Request URL: /radcheck
 Stack Trace:
 #0 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-06-17 03:05:36 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Hotspot.ticketname' in 'field list'
+Request URL: /Hotspots/index
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Hotspot...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Hotspot...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `Hotspot...', false)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Hotspot), Array)
+#5 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/wifi_manager/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate(NULL, Array, Array)
+#8 /var/www/html/wifi_manager/app/Controller/HotspotsController.php(25): Controller->paginate()
+#9 [internal function]: HotspotsController->index()
+#10 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(HotspotsController), Array)
+#11 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#13 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-06-17 03:11:04 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Hotspot.expired' in 'field list'
+Request URL: /Hotspots/index
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Hotspot...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Hotspot...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `Hotspot...', false)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Hotspot), Array)
+#5 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/wifi_manager/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate(NULL, Array, Array)
+#8 /var/www/html/wifi_manager/app/Controller/HotspotsController.php(25): Controller->paginate()
+#9 [internal function]: HotspotsController->index()
+#10 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(HotspotsController), Array)
+#11 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#13 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-06-17 03:40:33 Error: [MissingControllerException] Controller class ThemeController could not be found.
+Exception Attributes: array (
+  'class' => 'ThemeController',
+  'plugin' => NULL,
+)
+Request URL: /theme/sb-admin/bower_components/bootstrap/dist/js/bootstrap-datepicker.js
+Stack Trace:
+#0 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-17 03:40:33 Error: [MissingControllerException] Controller class ThemeController could not be found.
+Exception Attributes: array (
+  'class' => 'ThemeController',
+  'plugin' => NULL,
+)
+Request URL: /theme/sb-admin/bower_components/bootstrap/dist/css/datepicker.css
+Stack Trace:
+#0 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-17 03:43:45 Error: [MissingControllerException] Controller class ThemeController could not be found.
+Exception Attributes: array (
+  'class' => 'ThemeController',
+  'plugin' => NULL,
+)
+Request URL: /theme/sb-admin/bower_components/bootstrap/dist/css/datepicker.css
+Stack Trace:
+#0 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-17 03:43:45 Error: [MissingControllerException] Controller class ThemeController could not be found.
+Exception Attributes: array (
+  'class' => 'ThemeController',
+  'plugin' => NULL,
+)
+Request URL: /theme/sb-admin/bower_components/bootstrap/dist/js/bootstrap-datepicker.js
+Stack Trace:
+#0 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-17 03:43:56 Error: [MissingControllerException] Controller class ThemeController could not be found.
+Exception Attributes: array (
+  'class' => 'ThemeController',
+  'plugin' => NULL,
+)
+Request URL: /theme/sb-admin/bower_components/bootstrap/dist/css/datepicker.css
+Stack Trace:
+#0 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-17 03:44:33 Error: [MissingControllerException] Controller class ThemeController could not be found.
+Exception Attributes: array (
+  'class' => 'ThemeController',
+  'plugin' => NULL,
+)
+Request URL: /theme/sb-admin/bower_components/bootstrap/dist/js/bootstrap-datepicker.js
+Stack Trace:
+#0 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-06-17 04:16:03 Error: Fatal Error (4): syntax error, unexpected $end, expecting '`' in [/var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/add.ctp, line 74]
+2016-06-17 04:16:03 Error: [FatalErrorException] syntax error, unexpected $end, expecting '`'
+Request URL: /Hotspots/add
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/w...', 74)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/w...', 74, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/w...', 74, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-17 04:27:29 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/add.ctp, line 63]
+2016-06-17 04:27:29 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /Hotspots/add
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/w...', 63)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/w...', 63, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/w...', 63, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-17 05:08:35 Error: [MissingViewException] View file "Hotspots/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Hotspots/index.ctp',
+)
+Request URL: /Hotspots
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#4 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-06-17 05:13:59 Error: Fatal Error (4): syntax error, unexpected T_STRING in [/var/www/html/wifi_manager/app/Controller/HotspotsController.php, line 61]
+2016-06-17 05:13:59 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /Hotspots/add
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/w...', 61)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/w...', 61, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/w...', 61, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-17 05:14:21 Error: Fatal Error (64): Cannot re-assign $this in [/var/www/html/wifi_manager/app/Controller/HotspotsController.php, line 85]
+2016-06-17 05:14:21 Error: [FatalErrorException] Cannot re-assign $this
+Request URL: /Hotspots/add
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot re-assig...', '/var/www/html/w...', 85)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot re-assig...', '/var/www/html/w...', 85, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Cannot re-assig...', '/var/www/html/w...', 85, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-17 05:15:13 Error: Fatal Error (64): Cannot re-assign $this in [/var/www/html/wifi_manager/app/Controller/HotspotsController.php, line 85]
+2016-06-17 05:15:13 Error: [FatalErrorException] Cannot re-assign $this
+Request URL: /Hotspots/add
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot re-assig...', '/var/www/html/w...', 85)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot re-assig...', '/var/www/html/w...', 85, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Cannot re-assig...', '/var/www/html/w...', 85, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-17 05:15:33 Error: Fatal Error (64): Cannot re-assign $this in [/var/www/html/wifi_manager/app/Controller/HotspotsController.php, line 85]
+2016-06-17 05:15:33 Error: [FatalErrorException] Cannot re-assign $this
+Request URL: /Hotspots/add
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot re-assig...', '/var/www/html/w...', 85)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot re-assig...', '/var/www/html/w...', 85, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Cannot re-assig...', '/var/www/html/w...', 85, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-17 05:15:41 Error: Fatal Error (64): Cannot re-assign $this in [/var/www/html/wifi_manager/app/Controller/HotspotsController.php, line 85]
+2016-06-17 05:15:41 Error: [FatalErrorException] Cannot re-assign $this
+Request URL: /Hotspots/add
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot re-assig...', '/var/www/html/w...', 85)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot re-assig...', '/var/www/html/w...', 85, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Cannot re-assig...', '/var/www/html/w...', 85, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-17 05:16:08 Error: Fatal Error (64): Cannot re-assign $this in [/var/www/html/wifi_manager/app/Controller/HotspotsController.php, line 84]
+2016-06-17 05:16:08 Error: [FatalErrorException] Cannot re-assign $this
+Request URL: /Hotspots/add
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot re-assig...', '/var/www/html/w...', 84)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot re-assig...', '/var/www/html/w...', 84, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Cannot re-assig...', '/var/www/html/w...', 84, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-17 05:16:27 Error: Fatal Error (64): Cannot re-assign $this in [/var/www/html/wifi_manager/app/Controller/HotspotsController.php, line 77]
+2016-06-17 05:16:27 Error: [FatalErrorException] Cannot re-assign $this
+Request URL: /Hotspots/add
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot re-assig...', '/var/www/html/w...', 77)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot re-assig...', '/var/www/html/w...', 77, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Cannot re-assig...', '/var/www/html/w...', 77, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-06-17 05:27:12 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null
+Request URL: /Hotspots/add
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `wi...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1019): DboSource->execute('INSERT INTO `wi...')
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(1933): DboSource->create(Object(Radcheck), Array, Array)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(1751): Model->_doSave(NULL, Array)
+#5 /var/www/html/wifi_manager/app/Controller/HotspotsController.php(73): Model->save(NULL)
+#6 [internal function]: HotspotsController->add()
+#7 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(HotspotsController), Array)
+#8 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#10 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
