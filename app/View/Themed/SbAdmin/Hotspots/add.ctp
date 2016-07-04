@@ -21,6 +21,10 @@
 <div class="panel-body">
     <div class="row">
         <div class="col-lg-6">
+            <div class="form-group">
+                    <label>Package</label>
+                     <?= $this->Form->input('package_id', array('label'=> FALSE, 'class' => 'form-control')); ?>
+                </div>
                 <div class="form-group">
                     <label>Username</label>
                      <?= $this->Form->input('username', array('label'=> FALSE, 'class' => 'form-control')); ?>

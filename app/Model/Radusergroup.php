@@ -1,18 +1,24 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * Radcheck Model
+ * Radusergroup Model
  *
  */
-class Radcheck extends AppModel {
-
+class Radusergroup extends AppModel {
 
 /**
  * Use table
  *
  * @var mixed False or table name
  */
-	public $useTable = 'radcheck';
+	public $useTable = 'radusergroup';
+
+/**
+ * Primary key field
+ *
+ * @var string
+ */
+	public $primaryKey = 'username';
 
 /**
  * Display field

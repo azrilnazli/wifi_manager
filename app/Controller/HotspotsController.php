@@ -4,7 +4,7 @@ class HotspotsController extends AppController {
 
     public $theme = 'SbAdmin';
     public $helpers = array( 'Table' );
-    public $uses = array('Hotspot','Radcheck');
+    public $uses = array('Hotspot','Radcheck','Radusergroup');
 
 
     public function beforeFilter() {
@@ -57,6 +57,8 @@ class HotspotsController extends AppController {
     }
 
     public function add() {
+        $packages = $this->Hotspot->Package->find('list');
+        $this->set(array('packages' => $packages));
         if ($this->request->is('post')) {
             #$this->add_to_radius($this->request->data);
 
@@ -83,6 +85,8 @@ class HotspotsController extends AppController {
                             ));
                 $this->Radcheck->save();
 
+
+
                 # Upload / Download Limit
                 # Expiration Date | Expiration := 01 Sep 2005 12:00:00
                 $day    = $this->request->data['Hotspot']['expired']['day'];
@@ -102,12 +106,32 @@ class HotspotsController extends AppController {
                                 'value' => $expiration
                             ));
                 $this->Radcheck->save();              
-                # Session-Timeout
+             
+
+       		# Idle-Timeout
+                $this->Radcheck->create();
+                $this->Radcheck->set(array(
+                             'username' => $this->request->data['Hotspot']['username'],
+                                   'op' => ':=',
+                            'attribute' => 'Idle-Timeout',
+                                'value' => 900
+                            ));
+                $this->Radcheck->save();
+
+                # Priority
+		        $package = $this->Hotspot->Package->findById($this->request->data['Hotspot']['package_id']);
+                $this->Radusergroup->create();
+                $this->Radusergroup->set(array(
+                            'username'  => $this->request->data['Hotspot']['username'],
+                            'priority'  => 1,
+                            'groupname' => $package['Package']['title']
+                            ));
+                $this->Radusergroup->save();
 
 
-                  #$this->add_to_radius();
-                  $this->Session->setFlash(__('The ticket has been saved'), 'flash_success');
-                  return $this->redirect(array('action' => 'index'));
+
+                $this->Session->setFlash(__('The ticket has been saved'), 'flash_success');
+                return $this->redirect(array('action' => 'index'));
             } else {
 
                 #if ($this->Hotspot->validates()) {
@@ -150,6 +174,14 @@ class HotspotsController extends AppController {
         foreach($this->data['checkList'] as $id){
             if(!empty($id)){
                 $this->Hotspot->id = $id;
+                $this->Hotspot->id = $id;
+                $hotspot = $this->Hotspot->find('first');
+
+                $username = $hotspot['Hotspot']['username'];
+                $conditions = array('username' => $username);
+                           
+                $this->Radusergroup->deleteAll($conditions, FALSE);
+                $this->Radcheck->deleteAll($conditions, FALSE);  
                 $this->Hotspot->delete();               
             }
         }
@@ -160,11 +192,15 @@ class HotspotsController extends AppController {
 
     public function delete($id = null) {
         // Prior to 2.5 use
-        $this->request->onlyAllow('post');
+        #$this->request->onlyAllow('post');
 
         #$this->request->allowMethod('put');
+        #
+        
 
         $this->Hotspot->id = $id;
+        $hotspot = $this->Hotspot->find('first');
+        
         if (!$this->Hotspot->exists()) {
             throw new NotFoundException(__('Invalid ticket'));
         }
@@ -173,7 +209,13 @@ class HotspotsController extends AppController {
             # delete Radcheck by username
             # // Delete with array conditions similar to find()
             # $this->Comment->deleteAll(array('Comment.spam' => true), false);
-      
+            $username = $hotspot['Hotspot']['username'];
+            $conditions = array('username' => $username);
+       
+            $this->Radusergroup->deleteAll($conditions, FALSE); 
+            $this->Radcheck->deleteAll($conditions, FALSE); 
+       
+       
             $this->Session->setFlash(__('Hotspot ID:'.$id.' has been deleted'), 'flash_success');
             return $this->redirect(array('action' => 'index'));
         }

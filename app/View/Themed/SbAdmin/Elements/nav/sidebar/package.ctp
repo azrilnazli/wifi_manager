@@ -1,6 +1,6 @@
 <?php
-$search_hotspot = '
-<form action ="/Hotspots/search" method="GET">
+$search_package = '
+<form action ="/Package/search" method="GET">
 <div class="input-group custom-search-form">
     <input type="text" name="keyword" class="form-control" placeholder="Search...">
     <span class="input-group-btn">
@@ -12,16 +12,16 @@ $search_hotspot = '
 </form>
     ';
 ?>
-<a href="#"><i class="fa fa-sun-o"></i> Hotspot<span class="fa arrow"></span></a>
+<a href="#"><i class="fa fa-gears"></i> Package<span class="fa arrow"></span></a>
     <ul class="nav nav-second-level">
         <li>
-            <a href="/Hotspots/index"><i class="fa fa-list-alt"></i> Manage Tickets</a>
+            <a href="/Packages/index"><i class="fa fa-list-alt"></i> Manage Packages</a>
          </li>
          <li>
-            <a href="/Hotspots/add"><i class="fa fa-plus"></i> Create Ticket</a>
+            <a href="/Packages/add"><i class="fa fa-plus"></i> Create Package</a>
          </li>
          <li class="sidebar-search">
-            <?= $search_hotspot; ?>
+            <?= $search_package; ?>
          </li>
      </ul>
     <!-- /.nav-second-level -->

@@ -7,8 +7,8 @@ App::uses('AppModel', 'Model');
  */
 class Hotspot extends AppModel {
 
-
-public $hasMany = array(
+/*
+    public $hasMany = array(
         'Radcheck' => array(
             'className' => 'Radcheck',
             'foreignKey' => FALSE,
@@ -16,9 +16,10 @@ public $hasMany = array(
             'fields' => '',
             'order' => '',
             'dependent' => true
-        )
+        ),
     );
 
+ */
 
 /**
  * Display field
@@ -42,7 +43,8 @@ public $hasMany = array(
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
-		)
+        ),
+        'Package'
 	);
 
     public $validate = array(

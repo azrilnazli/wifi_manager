@@ -4,6 +4,7 @@ App::uses('SimplePasswordHasher', 'Controller/Component/Auth');
 class User extends AppModel {
 
     #public $belongsTo = 'Usergroup';
+    public $hasMany = array('Hotspot', 'Package');
     
     public $validate = array(
         

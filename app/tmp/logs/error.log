@@ -3777,3 +3777,332 @@ Stack Trace:
 #9 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
 #10 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 {main}
+2016-07-04 15:46:22 Error: Fatal Error (64): Cannot redeclare Hotspot::$belongsTo in [/var/www/html/wifi_manager/app/Model/Hotspot.php, line 47]
+2016-07-04 15:46:22 Error: [FatalErrorException] Cannot redeclare Hotspot::$belongsTo
+Request URL: /Hotspots/index
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/html/w...', 47)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/html/w...', 47, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/html/w...', 47, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-04 15:46:34 Error: Fatal Error (64): Cannot redeclare Hotspot::$belongsTo in [/var/www/html/wifi_manager/app/Model/Hotspot.php, line 47]
+2016-07-04 15:46:34 Error: [FatalErrorException] Cannot redeclare Hotspot::$belongsTo
+Request URL: /Hotspots/add
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/html/w...', 47)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/html/w...', 47, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/html/w...', 47, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-04 15:46:38 Error: Fatal Error (64): Cannot redeclare Hotspot::$belongsTo in [/var/www/html/wifi_manager/app/Model/Hotspot.php, line 47]
+2016-07-04 15:46:38 Error: [FatalErrorException] Cannot redeclare Hotspot::$belongsTo
+Request URL: /Hotspots/index
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/html/w...', 47)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/html/w...', 47, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/html/w...', 47, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-04 15:47:54 Error: Fatal Error (64): Cannot redeclare Hotspot::$belongsTo in [/var/www/html/wifi_manager/app/Model/Hotspot.php, line 47]
+2016-07-04 15:47:54 Error: [FatalErrorException] Cannot redeclare Hotspot::$belongsTo
+Request URL: /Hotspots/index
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/html/w...', 47)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/html/w...', 47, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/html/w...', 47, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-04 16:59:07 Error: Fatal Error (4): syntax error, unexpected '?' in [/var/www/html/wifi_manager/app/View/Themed/SbAdmin/Packages/add.ctp, line 74]
+2016-07-04 16:59:07 Error: [FatalErrorException] syntax error, unexpected '?'
+Request URL: /Packages/add
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/w...', 74)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/w...', 74, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/w...', 74, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-04 17:04:32 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/html/wifi_manager/app/View/Themed/SbAdmin/Packages/add.ctp, line 67]
+2016-07-04 17:04:32 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /Packages/add
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/w...', 67)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/w...', 67, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/w...', 67, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-04 17:19:28 Error: Fatal Error (1): Call to a member function create() on a non-object in [/var/www/html/wifi_manager/app/Controller/PackagesController.php, line 67]
+2016-07-04 17:19:28 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /Packages/add
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/w...', 67)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/w...', 67, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/w...', 67, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-04 17:27:15 Error: Fatal Error (1): Call to a member function create() on a non-object in [/var/www/html/wifi_manager/app/Controller/PackagesController.php, line 67]
+2016-07-04 17:27:15 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /Packages/add
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/w...', 67)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/w...', 67, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/w...', 67, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-04 17:36:10 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'groupname' cannot be null
+Request URL: /Packages/add
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `wi...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1019): DboSource->execute('INSERT INTO `wi...')
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(1933): DboSource->create(Object(Radgroupreply), Array, Array)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(1751): Model->_doSave(NULL, Array)
+#5 /var/www/html/wifi_manager/app/Controller/PackagesController.php(96): Model->save()
+#6 [internal function]: PackagesController->add()
+#7 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PackagesController), Array)
+#8 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PackagesController), Object(CakeRequest))
+#10 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2016-07-04 17:47:44 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/wifi_manager/app/Controller/HotspotsController.php, line 60]
+2016-07-04 17:47:44 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /Hotspots/add
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/w...', 60)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/w...', 60, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/w...', 60, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-04 18:03:05 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'groupname' cannot be null
+Request URL: /Hotspots/add
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `wi...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1019): DboSource->execute('INSERT INTO `wi...')
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(1933): DboSource->create(Object(Radusergroup), Array, Array)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(1751): Model->_doSave(NULL, Array)
+#5 /var/www/html/wifi_manager/app/Controller/HotspotsController.php(129): Model->save()
+#6 [internal function]: HotspotsController->add()
+#7 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(HotspotsController), Array)
+#8 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#10 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2016-07-04 18:07:23 Error: Fatal Error (64): Cannot redeclare Hotspot::$hasMany in [/var/www/html/wifi_manager/app/Model/Hotspot.php, line 31]
+2016-07-04 18:07:23 Error: [FatalErrorException] Cannot redeclare Hotspot::$hasMany
+Request URL: /Hotspots
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/html/w...', 31)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/html/w...', 31, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/html/w...', 31, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-04 18:10:12 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Hotspot.username' in 'where clause'
+Request URL: /Hotspots/delete/2
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Raduser...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Raduser...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `Raduser...', false)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Radusergroup), Array)
+#5 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(2769): Model->find('all', Array)
+#7 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(2694): Model->_deleteDependent('2', true)
+#8 /var/www/html/wifi_manager/app/Controller/HotspotsController.php(195): Model->delete()
+#9 [internal function]: HotspotsController->delete('2')
+#10 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(HotspotsController), Array)
+#11 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#13 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-07-04 18:12:02 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Hotspot.username' in 'where clause'
+Request URL: /Hotspots/delete/2
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Raduser...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Raduser...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `Raduser...', false)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Radusergroup), Array)
+#5 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(2769): Model->find('all', Array)
+#7 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(2694): Model->_deleteDependent('2', true)
+#8 /var/www/html/wifi_manager/app/Controller/HotspotsController.php(195): Model->delete()
+#9 [internal function]: HotspotsController->delete('2')
+#10 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(HotspotsController), Array)
+#11 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#13 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-07-04 18:19:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Package.username' in 'where clause'
+Request URL: /Hotspots/delete/3
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Raduser...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Raduser...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `Raduser...', false)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Radusergroup), Array)
+#5 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(2834): Model->find('all', Array)
+#7 /var/www/html/wifi_manager/app/Controller/HotspotsController.php(203): Model->deleteAll(Array)
+#8 [internal function]: HotspotsController->delete('3')
+#9 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(HotspotsController), Array)
+#10 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#12 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-07-04 18:28:40 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Hotspot.username' in 'where clause'
+Request URL: /Hotspots/delete/7
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Radchec...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Radchec...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1359): DboSource->fetchAll('SELECT `Radchec...', false)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1144): DboSource->queryAssociation(Object(Hotspot), Object(Radcheck), 'hasMany', 'Radcheck', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Hotspot), Array)
+#6 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#7 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(595): Model->find('first', Array)
+#8 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(827): DboSource->query('findById', Array, Object(Hotspot))
+#9 /var/www/html/wifi_manager/app/Controller/HotspotsController.php(195): Model->__call('findById', Array)
+#10 /var/www/html/wifi_manager/app/Controller/HotspotsController.php(195): Hotspot->findById('7')
+#11 [internal function]: HotspotsController->delete('7')
+#12 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(HotspotsController), Array)
+#13 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#15 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2016-07-04 18:28:51 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Hotspot.username' in 'where clause'
+Request URL: /Hotspots/delete/7
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Radchec...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Radchec...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1359): DboSource->fetchAll('SELECT `Radchec...', false)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1144): DboSource->queryAssociation(Object(Hotspot), Object(Radcheck), 'hasMany', 'Radcheck', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Hotspot), Array)
+#6 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#7 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(595): Model->find('first', Array)
+#8 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(827): DboSource->query('findById', Array, Object(Hotspot))
+#9 /var/www/html/wifi_manager/app/Controller/HotspotsController.php(195): Model->__call('findById', Array)
+#10 /var/www/html/wifi_manager/app/Controller/HotspotsController.php(195): Hotspot->findById('7')
+#11 [internal function]: HotspotsController->delete('7')
+#12 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(HotspotsController), Array)
+#13 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#15 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2016-07-04 18:30:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Hotspot.username' in 'where clause'
+Request URL: /Hotspots/delete/7
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Radchec...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Radchec...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1359): DboSource->fetchAll('SELECT `Radchec...', false)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1144): DboSource->queryAssociation(Object(Hotspot), Object(Radcheck), 'hasMany', 'Radcheck', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Hotspot), Array)
+#6 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3003): Model->_readDataSource('username', Array)
+#7 /var/www/html/wifi_manager/app/Controller/HotspotsController.php(195): Model->find('username')
+#8 [internal function]: HotspotsController->delete('7')
+#9 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(HotspotsController), Array)
+#10 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#12 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-07-04 18:31:52 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Hotspot.username' in 'where clause'
+Request URL: /Hotspots/delete/7
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Radchec...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Radchec...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1359): DboSource->fetchAll('SELECT `Radchec...', false)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1144): DboSource->queryAssociation(Object(Hotspot), Object(Radcheck), 'hasMany', 'Radcheck', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Hotspot), Array)
+#6 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#7 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(595): Model->find('first', Array)
+#8 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(827): DboSource->query('findById', Array, Object(Hotspot))
+#9 /var/www/html/wifi_manager/app/Controller/HotspotsController.php(196): Model->__call('findById', Array)
+#10 /var/www/html/wifi_manager/app/Controller/HotspotsController.php(196): Hotspot->findById('7')
+#11 [internal function]: HotspotsController->delete('7')
+#12 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(HotspotsController), Array)
+#13 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#15 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2016-07-04 18:34:12 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Hotspot.username' in 'where clause'
+Request URL: /Hotspots/delete/7
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Radchec...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Radchec...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1359): DboSource->fetchAll('SELECT `Radchec...', false)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1144): DboSource->queryAssociation(Object(Hotspot), Object(Radcheck), 'hasMany', 'Radcheck', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Hotspot), Array)
+#6 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#7 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(595): Model->find('first', Array)
+#8 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(827): DboSource->query('findById', Array, Object(Hotspot))
+#9 /var/www/html/wifi_manager/app/Controller/HotspotsController.php(196): Model->__call('findById', Array)
+#10 /var/www/html/wifi_manager/app/Controller/HotspotsController.php(196): Hotspot->findById('7')
+#11 [internal function]: HotspotsController->delete('7')
+#12 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(HotspotsController), Array)
+#13 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#15 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2016-07-04 18:37:15 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Hotspot.username' in 'where clause'
+Request URL: /Hotspots/delete/9
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Raduser...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Raduser...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `Raduser...', false)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Radusergroup), Array)
+#5 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(2769): Model->find('all', Array)
+#7 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(2694): Model->_deleteDependent('9', true)
+#8 /var/www/html/wifi_manager/app/Controller/HotspotsController.php(195): Model->delete()
+#9 [internal function]: HotspotsController->delete('9')
+#10 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(HotspotsController), Array)
+#11 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#13 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-07-04 18:41:31 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Hotspot.username' in 'where clause'
+Request URL: /Hotspots/delete/10
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Radchec...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Radchec...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1359): DboSource->fetchAll('SELECT `Radchec...', false)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1144): DboSource->queryAssociation(Object(Hotspot), Object(Radcheck), 'hasMany', 'Radcheck', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Hotspot), Array)
+#6 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#7 /var/www/html/wifi_manager/app/Controller/HotspotsController.php(194): Model->find('first')
+#8 [internal function]: HotspotsController->delete('10')
+#9 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(HotspotsController), Array)
+#10 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#12 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-07-04 18:45:48 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'username' in where clause is ambiguous
+Request URL: /Hotspots/delete/11
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('DELETE `Radchec...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/Database/Mysql.php(455): DboSource->execute('DELETE `Radchec...')
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(2826): Mysql->delete(Object(Radcheck), Array)
+#4 /var/www/html/wifi_manager/app/Controller/HotspotsController.php(208): Model->deleteAll(Array, false)
+#5 [internal function]: HotspotsController->delete('11')
+#6 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(HotspotsController), Array)
+#7 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#9 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
