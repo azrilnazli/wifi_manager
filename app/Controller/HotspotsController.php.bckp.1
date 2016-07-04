@@ -64,47 +64,26 @@ class HotspotsController extends AppController {
 
             $this->Hotspot->create();
             if ($this->Hotspot->save($this->request->data)) {
-                $this->add_to_radius();
-                $this->Session->setFlash(__('The ticket has been saved'), 'flash_success');
-                return $this->redirect(array('action' => 'index'));
-            } else {
-                $this->Session->setFlash(__('The ticket could not be saved. Please, try again.'), 'flash_error');
-            }
-       }
-    }
+              
+                # Password
+                $this->Radcheck->create();
+                $this->Radcheck->set(array(
+                            'username'  => $this->request->data['Hotspot']['username'],
+                            'op'        => ':=',
+                            'attribute' => 'Cleartext-Password',
+                            'value'     => $this->request->data['Hotspot']['password']
+                            ));
+                $this->Radcheck->save();
 
-
-    public function add_to_radius(){
-
-        # clear any instance of same username
-                                
-        $username = $this->request->data['Hotspot']['username'];
-        $conditions = array('username' => $username);
-                                                          
-        $this->Radusergroup->deleteAll($conditions, FALSE);
-        $this->Radcheck->deleteAll($conditions, FALSE); 
-
-        ## Now add data to radius
-
-        # Password
-        $this->Radcheck->create();
-        $this->Radcheck->set(array(
-            'username'  => $this->request->data['Hotspot']['username'],
-            'op'        => ':=',
-            'attribute' => 'Cleartext-Password',
-            'value'     => $this->request->data['Hotspot']['password']
-        ));
-        $this->Radcheck->save();
-
-        # Simultaneous
-        $this->Radcheck->create();
-        $this->Radcheck->set(array(
-            'username' => $this->request->data['Hotspot']['username'],
-            'op' => ':=',
-            'attribute' => 'Simultaneous-Use',
-            'value' => 1
-        ));
-        $this->Radcheck->save();
+                # Simultaneous
+                $this->Radcheck->create();
+                $this->Radcheck->set(array(
+                             'username' => $this->request->data['Hotspot']['username'],
+                                   'op' => ':=',
+                            'attribute' => 'Simultaneous-Use',
+                                'value' => 1
+                            ));
+                $this->Radcheck->save();
 
                 # Max-All-Session | noresetcounter
                 #$this->Radcheck->create();
@@ -117,49 +96,67 @@ class HotspotsController extends AppController {
                 #$this->Radcheck->save();
 
 
-         # Upload / Download Limit
-         # Expiration Date | Expiration := 01 Sep 2005 12:00:00
-         $day    = $this->request->data['Hotspot']['expired']['day'];
-         $month_number   = $this->request->data['Hotspot']['expired']['month'];
-         $month_name     = date("F", mktime(0, 0, 0, $month_number, 10));
-         $year   = $this->request->data['Hotspot']['expired']['year'];
-         $hour   = $this->request->data['Hotspot']['expired']['hour'];
-         $min    = $this->request->data['Hotspot']['expired']['min'];
+                # Upload / Download Limit
+                # Expiration Date | Expiration := 01 Sep 2005 12:00:00
+                $day    = $this->request->data['Hotspot']['expired']['day'];
+                $month_number   = $this->request->data['Hotspot']['expired']['month'];
+                $month_name     = date("F", mktime(0, 0, 0, $month_number, 10));
+                $year   = $this->request->data['Hotspot']['expired']['year'];
+                $hour   = $this->request->data['Hotspot']['expired']['hour'];
+                $min    = $this->request->data['Hotspot']['expired']['min'];
 
-         $expiration = "{$day} {$month_name} {$year} {$hour}:{$min}:00";
+                $expiration = "{$day} {$month_name} {$year} {$hour}:{$min}:00";
 
-		 $this->Radcheck->create(); 
-         $this->Radcheck->set(array(
-            'username' => $this->request->data['Hotspot']['username'],
-            'op' => ':=',
-            'attribute' => 'Expiration',
-            'value' => $expiration
-         ));
-         $this->Radcheck->save();              
+		        $this->Radcheck->create(); 
+                $this->Radcheck->set(array(
+                             'username' => $this->request->data['Hotspot']['username'],
+                                   'op' => ':=',
+                            'attribute' => 'Expiration',
+                                'value' => $expiration
+                            ));
+                $this->Radcheck->save();              
              
 
-         # Idle-Timeout
-         $this->Radcheck->create();
-         $this->Radcheck->set(array(
-             'username' => $this->request->data['Hotspot']['username'],
-                   'op' => ':=',
-            'attribute' => 'Idle-Timeout',
-                'value' => 900
-         ));
-         $this->Radcheck->save();
+           		# Idle-Timeout
+                $this->Radcheck->create();
+                $this->Radcheck->set(array(
+                             'username' => $this->request->data['Hotspot']['username'],
+                                   'op' => ':=',
+                            'attribute' => 'Idle-Timeout',
+                                'value' => 900
+                            ));
+                $this->Radcheck->save();
 
-         # Priority
-		 $package = $this->Hotspot->Package->findById($this->request->data['Hotspot']['package_id']);
-         $this->Radusergroup->create();
-         $this->Radusergroup->set(array(
-            'username'  => $this->request->data['Hotspot']['username'],
-            'priority'  => 1,
-            'groupname' => $package['Package']['title']
-         ));
-         $this->Radusergroup->save();
+                # Priority
+		        $package = $this->Hotspot->Package->findById($this->request->data['Hotspot']['package_id']);
+                $this->Radusergroup->create();
+                $this->Radusergroup->set(array(
+                            'username'  => $this->request->data['Hotspot']['username'],
+                            'priority'  => 1,
+                            'groupname' => $package['Package']['title']
+                            ));
+                $this->Radusergroup->save();
 
-         # Mikrotik-Total-Limit-Gigawords := "6", // equivalent to 24GB
+                # Mikrotik-Total-Limit-Gigawords := "6", // equivalent to 24GB
 
+
+                $this->Session->setFlash(__('The ticket has been saved'), 'flash_success');
+                return $this->redirect(array('action' => 'index'));
+            } else {
+
+                #if ($this->Hotspot->validates()) {
+                    // it validated logic
+                #} else {
+                    // didn't validate logic
+                #    $errors = $this->Hotspot->validationErrors;
+                #    $this->set('errors', $errors);
+                #}
+
+                $this->Session->setFlash(
+                    __('The ticket could not be saved. Please, try again.'), 'flash_error'
+                );
+            }
+        }
     }
 
     public function edit($id = null) {
@@ -172,7 +169,6 @@ class HotspotsController extends AppController {
         }
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->Hotspot->save($this->request->data)) {
-                $this->add_to_radius();
                 $this->Session->setFlash(__('The ticket has been saved'), 'flash_success');
                 return $this->redirect(array('action' => 'index'));
             }
@@ -187,19 +183,18 @@ class HotspotsController extends AppController {
 
     public function mass_delete(){
         $this->request->allowMethod('post');
-        foreach($this->request->data['checkList'] as $id){
+        #debug($this->data);
+        foreach($this->data['checkList'] as $id){
             if(!empty($id)){
-                #$hotspot = $this->Hotspot->find('first', array('Hotspot.id' => $id));
-                $this->Hotspot->recursive= -1;
-                $hotspot = $this->Hotspot->findById($id);
+                $this->Hotspot->id = $id;
+                $this->Hotspot->id = $id;
+                $hotspot = $this->Hotspot->find('first');
 
                 $username = $hotspot['Hotspot']['username'];
                 $conditions = array('username' => $username);
                            
                 $this->Radusergroup->deleteAll($conditions, FALSE);
                 $this->Radcheck->deleteAll($conditions, FALSE);  
-
-                $this->Hotspot->id =  $id;
                 $this->Hotspot->delete();               
             }
         }

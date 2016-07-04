@@ -31,10 +31,10 @@ class PackagesController extends AppController {
         $keyword = $_GET['keyword'];
         $this->Package->recursive = 0;
         $this->paginate = array(
-                        'fields' => array('Package.id', 'Package.username','Package.role', 'Package.created'),
+                        'fields' => array('Package.id', 'Package.groupname','Package.role', 'Package.created'),
                         'limit'  => 20,
                         'order'  => array( 'id' => 'desc' ),
-                        'conditions' => array('Package.username LIKE' =>  $keyword . '%'),
+                        'conditions' => array('Package.groupname LIKE' =>  $keyword . '%'),
                                                                 
                         );
         $results =  $this->paginate();
@@ -62,7 +62,21 @@ class PackagesController extends AppController {
 
             $this->Package->create();
             if ($this->Package->save($this->request->data)) {
-              
+                    $this->add_to_radius();           
+                    $this->Session->setFlash(__('The package has been saved'), 'flash_success');
+                    return $this->redirect(array('action' => 'index'));
+            } else {
+                $this->Session->setFlash( __('The ticket could not be saved. Please, try again.'), 'flash_error');
+            }
+        }
+    }
+
+
+    public function add_to_radius(){
+                $groupname = $this->request->data['Package']['title'];
+                $conditions = array('groupname' => $groupname);
+                $this->Radgroupreply->deleteAll($conditions, FALSE);
+
                 # Password
                 $this->Radgroupreply->create();
                 $this->Radgroupreply->set(array(
@@ -98,21 +112,6 @@ class PackagesController extends AppController {
                   #$this->add_to_radius();
                   $this->Session->setFlash(__('The ticket has been saved'), 'flash_success');
                   return $this->redirect(array('action' => 'index'));
-            } else {
-
-                #if ($this->Package->validates()) {
-                    // it validated logic
-                #} else {
-                    // didn't validate logic
-                #    $errors = $this->Package->validationErrors;
-                #    $this->set('errors', $errors);
-                #}
-
-                $this->Session->setFlash(
-                    __('The ticket could not be saved. Please, try again.'), 'flash_error'
-                );
-            }
-        }
     }
 
     public function edit($id = null) {
@@ -122,6 +121,7 @@ class PackagesController extends AppController {
         }
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->Package->save($this->request->data)) {
+                $this->add_to_radius();
                 $this->Session->setFlash(__('The ticket has been saved'), 'flash_success');
                 return $this->redirect(array('action' => 'index'));
             }
@@ -139,6 +139,16 @@ class PackagesController extends AppController {
         #debug($this->data);
         foreach($this->data['checkList'] as $id){
             if(!empty($id)){
+
+
+                $this->Package->recursive= -1;
+                $package = $this->Package->findById($id);
+
+                $groupname = $package['Package']['title'];
+                $conditions = array('groupname' => $groupname);
+
+                $this->Radgroupreply->deleteAll($conditions, FALSE);
+
                 $this->Package->id = $id;
                 $this->Package->delete();               
             }
@@ -158,12 +168,20 @@ class PackagesController extends AppController {
         if (!$this->Package->exists()) {
             throw new NotFoundException(__('Invalid ticket'));
         }
+
+        $this->Package->recursive= -1;
+        $package = $this->Package->findById($id);
         if ($this->Package->delete()) {
 
-            # delete Radgroupreply by username
+            # delete Radgroupreply by groupname
             # // Delete with array conditions similar to find()
             # $this->Comment->deleteAll(array('Comment.spam' => true), false);
-      
+
+            $groupname = $package['Package']['title'];
+            $conditions = array('groupname' => $groupname);
+
+            $this->Radgroupreply->deleteAll($conditions, FALSE);
+
             $this->Session->setFlash(__('Package ID:'.$id.' has been deleted'), 'flash_success');
             return $this->redirect(array('action' => 'index'));
         }

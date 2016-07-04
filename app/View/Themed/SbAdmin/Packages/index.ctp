@@ -45,7 +45,7 @@ echo $this->Table->create(
 
 
 #debug($users);
-
+if($packages){
 Foreach( $packages as $package ){
 
     $checkbox = $this->Form->checkbox('checkList.', 
@@ -97,5 +97,6 @@ echo $this->Table->tableCells( $data );
 #echo $this->Table->tableFromData( $users, array( 'header' => TRUE ) );
 
 echo $this->Table->end();
+}
 ?>
 </form>

@@ -45,10 +45,10 @@ echo $this->Table->create(
 
 
 #debug($users);
+if($hotspots){
+    Foreach( $hotspots as $hotspot ){
 
-Foreach( $hotspots as $hotspot ){
-
-    $checkbox = $this->Form->checkbox('checkList.', 
+        $checkbox = $this->Form->checkbox('checkList.', 
                                         array( 
                                                'value'  => $hotspot['Hotspot']['id'],
                                                'id'     => 'user'.$hotspot['Hotspot']['id'], 
@@ -62,7 +62,7 @@ Foreach( $hotspots as $hotspot ){
                                                'hiddenField'=>true) 
                                      );
 
-    $delete = $this->Form->postLink(
+        $delete = $this->Form->postLink(
                     'Delete',
                     array('controller' => 'Hotspots', 'action' => 'delete', $hotspot['Hotspot']['id']),
                     array(  
@@ -70,7 +70,7 @@ Foreach( $hotspots as $hotspot ){
                             'class'   => 'btn btn-outline btn-danger'
                         )
                 );
-    $data[] = array( 
+        $data[] = array( 
             "<center>{$checkbox}</center>",
             $hotspot['Hotspot']['id'],  
             $hotspot['Hotspot']['username'],  
@@ -78,24 +78,18 @@ Foreach( $hotspots as $hotspot ){
             $hotspot['Hotspot']['created'],
             "<center><a class='btn btn-outline btn-primary' href='/Hotspots/edit/{$hotspot['Hotspot']['id']}'>Edit</a> <a class='btn btn-outline btn-danger' href='/Hotspots/delete/{$hotspot['Hotspot']['id']}'>Delete</a> </center>"
         );
-}
+    } // Foreach
 
-#debug($data);
-$sort_id = $this->Paginator->sort('id');
-$sort_username = $this->Paginator->sort('username');
-$sort_expired = $this->Paginator->sort('expired');
-$sort_created = $this->Paginator->sort('created');
-echo $this->Table->tableHeaders( array('', $sort_id, $sort_username, $sort_expired, $sort_created,null ) );
-echo $this->Table->tableCells( $data );
-#echo $this->Table->tableCells( array(
-#            array( '1', 'John', 'Doh', '1970-01-01'),
-#            array( '2', 'Max', 'Damage', '1980-12-12'),
-#            array( '3', 'Jane', 'Cake', '1985-06-06'),
-#            ) );
+    if($data) {
+        $sort_id = $this->Paginator->sort('id');
+        $sort_username = $this->Paginator->sort('username');
+        $sort_expired = $this->Paginator->sort('expired');
+        $sort_created = $this->Paginator->sort('created');
+        echo $this->Table->tableHeaders( array('', $sort_id, $sort_username, $sort_expired, $sort_created,null ) );
+        echo $this->Table->tableCells( $data );
 
-
-#echo $this->Table->tableFromData( $users, array( 'header' => TRUE ) );
-
-echo $this->Table->end();
+        echo $this->Table->end();
+    } // if($data)
+} // if ($hotspots)
 ?>
 </form>
