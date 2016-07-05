@@ -21,8 +21,6 @@
         <dd><?=$this->Number->toReadableSize($hotspot['Package']['upload']);?></dd>
         <dt>Download Speed</dt>
         <dd><?=$this->Number->toReadableSize($hotspot['Package']['download']);?></dd>
-        <dt>Max Volume</dt>
-        <dd><?=$hotspot['Package']['volume']*4;?> GB</dd>
         <dt>Concurrent</dt>
         <dd>1</dd>
         <dt>Idle Timeout</dt>
@@ -42,6 +40,7 @@
         $total_volume = null;
         Foreach($detail as $k => $data):
             $row[$k]['connect'] = $this->Time->timeAgoInWords($data['Radacct']['acctstarttime']);
+            $row[$k]['framedipaddress'] = $data['Radacct']['framedipaddress'];
             $row[$k]['duration']= $data[0]['duration'];
             $row[$k]['volume']= $this->Number->toReadableSize($data[0]['volume']);
             $total_time     += $data[0]['second'];
@@ -63,7 +62,7 @@
            'panel_footer' => "Total volume : <strong>{$total_volume}</strong> | Total time : <strong>{$total_time}</strong>",
            'style' => '' )
        );
-        echo $this->Table->tableHeaders( array('Date', 'Duration' , 'Volume') );
+        echo $this->Table->tableHeaders( array('Date','IP' ,'Duration' , 'Volume') );
         echo $this->Table->tableCells( $row );
         echo $this->Table->end();
         ?>

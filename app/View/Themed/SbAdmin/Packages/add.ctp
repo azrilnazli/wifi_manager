@@ -72,10 +72,6 @@ $download = $this->Form->input('download', array(
                                     'class' => 'form-control'));
 ?>
 
-    <div class="form-group">
-        <?=$volume;?>
-    </div>
-
     <div class="row form-group">
         <div class="col-sm-6"><div class="well"<><?=$upload;?></div></div>
         <div class="col-sm-6"><div class="well"<><?=$download;?></div></div>

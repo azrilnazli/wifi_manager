@@ -75,6 +75,7 @@ class HotspotsController extends AppController {
             #$this->add_to_radius($this->request->data);
 
             $this->Hotspot->create();
+            $this->request->data['Hotspot']['user_id'] = $this->Auth->user('id');
             if ($this->Hotspot->save($this->request->data)) {
                 $this->add_to_radius();
                 $this->Session->setFlash(__('The ticket has been saved'), 'flash_success');
@@ -184,6 +185,7 @@ class HotspotsController extends AppController {
             throw new NotFoundException(__('Invalid ticket'));
         }
         if ($this->request->is('post') || $this->request->is('put')) {
+            $this->request->data['Hotspot']['user_id'] = $this->Auth->user('id');
             if ($this->Hotspot->save($this->request->data)) {
                 $this->add_to_radius();
                 $this->Session->setFlash(__('The ticket has been saved'), 'flash_success');

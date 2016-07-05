@@ -61,6 +61,7 @@ class PackagesController extends AppController {
             #$this->add_to_radius($this->request->data);
 
             $this->Package->create();
+            $this->request->data['Package']['user_id'] = $this->Auth->user('id');
             if ($this->Package->save($this->request->data)) {
                     $this->add_to_radius($this->Package->id);           
                     $this->Session->setFlash(__('The package has been saved'), 'flash_success');
@@ -80,13 +81,13 @@ class PackagesController extends AppController {
 
                 # Mikrotik-Total-Limit 1 = 4100 Mb
                 $this->Radgroupreply->create();
-                $this->Radgroupreply->set(array(
-                            'groupname'  => $id,
-                            'op'        => ':=',
-                            'attribute' => 'Mikrotik-Total-Limit-Gigawords',
-                            'value'     => $this->request->data['Package']['volume']
-                            ));
-                $this->Radgroupreply->save();
+                #$this->Radgroupreply->set(array(
+                #            'groupname'  => $id,
+                #            'op'        => ':=',
+                #            'attribute' => 'Mikrotik-Total-Limit-Gigawords',
+                #            'value'     => $this->request->data['Package']['volume']
+                #            ));
+                #$this->Radgroupreply->save();
 
                 # Ascend-Xmit-Rate
                 $this->Radgroupreply->create();
@@ -131,6 +132,7 @@ class PackagesController extends AppController {
             throw new NotFoundException(__('Invalid ticket'));
         }
         if ($this->request->is('post') || $this->request->is('put')) {
+            $this->request->data['Package']['user_id'] = $this->Auth->user('id');
             if ($this->Package->save($this->request->data)) {
                 $this->add_to_radius();
                 $this->Session->setFlash(__('The ticket has been saved'), 'flash_success');

@@ -56,7 +56,8 @@ class RadacctsController extends AppController {
                                     'time_to_sec(timediff(Radacct.acctstoptime,Radacct.acctstarttime)) as second',
                                     'timediff(Radacct.acctstoptime,Radacct.acctstarttime) as duration',
                                     '(Radacct.acctinputoctets + Radacct.acctoutputoctets) as volume',
-                                    'Radacct.acctstarttime'
+                                    'Radacct.acctstarttime',
+                                    'Radacct.framedipaddress',
                                 ),
             'conditions' => array('Radacct.username' => $username),
         );
