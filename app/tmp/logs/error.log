@@ -4457,3 +4457,301 @@ Stack Trace:
 #3 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
 #4 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2016-07-05 16:12:23 Error: [MissingActionException] Action HotspotsController::index.html() could not be found.
+Exception Attributes: array (
+  'controller' => 'HotspotsController',
+  'action' => 'index.html',
+)
+Request URL: /Hotspots/index.html
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#2 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-07-05 16:59:12 Error: [MissingControllerException] Controller class Prepaid1Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Prepaid1Controller',
+  'plugin' => NULL,
+)
+Request URL: /Hotspots/view/42
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Core/Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(9): Object->requestAction('prepaid1')
+#2 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#3 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#4 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#5 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#6 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#7 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#8 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2016-07-05 16:59:51 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/var/www/html/wifi_manager/app/Controller/RadacctsController.php, line 58]
+2016-07-05 16:59:51 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /Hotspots/view/42
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/w...', 58)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/w...', 58, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/w...', 58, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-05 17:00:33 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/var/www/html/wifi_manager/app/Controller/RadacctsController.php, line 58]
+2016-07-05 17:00:33 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /Hotspots/view/42
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/w...', 58)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/w...', 58, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/w...', 58, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-05 17:00:50 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Radaacct.username' in 'where clause'
+Request URL: /Hotspots/view/42
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Radacct...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Radacct...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `Radacct...', false)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Radacct), Array)
+#5 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/wifi_manager/app/Controller/RadacctsController.php(58): Model->find('all', Array)
+#7 [internal function]: RadacctsController->detail('prepaid1')
+#8 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RadacctsController), Array)
+#9 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadacctsController), Object(CakeRequest))
+#11 /var/www/html/wifi_manager/lib/Cake/Core/Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#12 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(9): Object->requestAction('/Radaccts/detai...')
+#13 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#14 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#15 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#16 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#17 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#18 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#19 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2016-07-05 17:21:16 Error: [MissingActionException] Action RadacctsController::datediff() could not be found.
+Exception Attributes: array (
+  'controller' => 'RadacctsController',
+  'action' => 'datediff',
+)
+Request URL: /Hotspots/view/42
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Controller/Scaffold.php(152): Scaffold->_scaffold(Object(CakeRequest))
+#1 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(536): Scaffold->__construct(Object(RadacctsController), Object(CakeRequest))
+#2 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(495): Controller->_getScaffold(Object(CakeRequest))
+#3 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadacctsController), Object(CakeRequest))
+#5 /var/www/html/wifi_manager/lib/Cake/Core/Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#6 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(10): Object->requestAction('/Radaccts/dated...')
+#7 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#8 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#9 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#10 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#11 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#12 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#13 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-07-05 17:28:43 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')) as diff' at line 1
+Request URL: /Hotspots/view/42
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('select time_to_...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('select time_to_...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(540): DboSource->fetchAll('select time_to_...')
+#4 /var/www/html/wifi_manager/app/Controller/RadacctsController.php(65): DboSource->query('select time_to_...')
+#5 [internal function]: RadacctsController->timediff()
+#6 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RadacctsController), Array)
+#7 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadacctsController), Object(CakeRequest))
+#9 /var/www/html/wifi_manager/lib/Cake/Core/Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#10 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(15): Object->requestAction('/Radaccts/timed...')
+#11 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#12 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#13 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#14 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#15 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#16 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#17 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2016-07-05 17:29:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')) as diff' at line 1
+Request URL: /Hotspots/view/42
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('select time_to_...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('select time_to_...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(540): DboSource->fetchAll('select time_to_...')
+#4 /var/www/html/wifi_manager/app/Controller/RadacctsController.php(66): DboSource->query('select time_to_...')
+#5 [internal function]: RadacctsController->timediff()
+#6 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RadacctsController), Array)
+#7 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadacctsController), Object(CakeRequest))
+#9 /var/www/html/wifi_manager/lib/Cake/Core/Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#10 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(15): Object->requestAction('/Radaccts/timed...')
+#11 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#12 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#13 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#14 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#15 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#16 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#17 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2016-07-05 17:29:29 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')) as diff' at line 1
+Request URL: /Hotspots/view/42
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('select time_to_...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('select time_to_...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(540): DboSource->fetchAll('select time_to_...')
+#4 /var/www/html/wifi_manager/app/Controller/RadacctsController.php(66): DboSource->query('select time_to_...')
+#5 [internal function]: RadacctsController->timediff()
+#6 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RadacctsController), Array)
+#7 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadacctsController), Object(CakeRequest))
+#9 /var/www/html/wifi_manager/lib/Cake/Core/Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#10 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(16): Object->requestAction('/Radaccts/timed...')
+#11 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#12 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#13 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#14 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#15 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#16 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#17 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2016-07-05 17:30:44 Error: Fatal Error (4): syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in [/var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp, line 16]
+2016-07-05 17:30:44 Error: [FatalErrorException] syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING
+Request URL: /Hotspots/view/42
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/w...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/w...', 16, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/w...', 16, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-05 17:32:11 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')) as diff' at line 1
+Request URL: /Hotspots/view/42
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('select time_to_...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('select time_to_...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(540): DboSource->fetchAll('select time_to_...')
+#4 /var/www/html/wifi_manager/app/Controller/RadacctsController.php(66): DboSource->query('select time_to_...')
+#5 [internal function]: RadacctsController->timediff()
+#6 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RadacctsController), Array)
+#7 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadacctsController), Object(CakeRequest))
+#9 /var/www/html/wifi_manager/lib/Cake/Core/Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#10 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(18): Object->requestAction('/Radaccts/timed...')
+#11 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#12 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#13 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#14 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#15 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#16 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#17 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2016-07-05 17:33:29 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')) as diff' at line 1
+Request URL: /Hotspots/view/42
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('select time_to_...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('select time_to_...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(540): DboSource->fetchAll('select time_to_...')
+#4 /var/www/html/wifi_manager/app/Controller/RadacctsController.php(66): DboSource->query('select time_to_...')
+#5 [internal function]: RadacctsController->timediff()
+#6 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RadacctsController), Array)
+#7 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadacctsController), Object(CakeRequest))
+#9 /var/www/html/wifi_manager/lib/Cake/Core/Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#10 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(18): Object->requestAction('/Radaccts/timed...')
+#11 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#12 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#13 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#14 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#15 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#16 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#17 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2016-07-05 17:42:25 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1583 Incorrect parameters in the call to native function 'time_to_sec'
+Request URL: /Hotspots/view/42
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT time_to_...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT time_to_...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT time_to_...', false)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Radacct), Array)
+#5 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/wifi_manager/app/Controller/RadacctsController.php(58): Model->find('all', Array)
+#7 [internal function]: RadacctsController->detail('prepaid1')
+#8 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RadacctsController), Array)
+#9 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadacctsController), Object(CakeRequest))
+#11 /var/www/html/wifi_manager/lib/Cake/Core/Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#12 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(11): Object->requestAction('/Radaccts/detai...')
+#13 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#14 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#15 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#16 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#17 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#18 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#19 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2016-07-05 18:08:22 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Radacct.acctoutputoctets) as volume, `Radacct`.`acctstarttime` FROM `wifi_manage' at line 1
+Request URL: /Hotspots/view/42
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT timediff...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT timediff...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT timediff...', false)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Radacct), Array)
+#5 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/wifi_manager/app/Controller/RadacctsController.php(63): Model->find('all', Array)
+#7 [internal function]: RadacctsController->detail('prepaid1')
+#8 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RadacctsController), Array)
+#9 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadacctsController), Object(CakeRequest))
+#11 /var/www/html/wifi_manager/lib/Cake/Core/Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#12 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(10): Object->requestAction('/Radaccts/detai...')
+#13 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#14 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#15 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#16 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#17 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#18 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#19 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2016-07-05 18:56:40 Error: [MissingControllerException] Controller class Sb-adminController could not be found.
+Exception Attributes: array (
+  'class' => 'Sb-adminController',
+  'plugin' => NULL,
+)
+Request URL: /sb-admin/bower_components/datatables-responsive/css/dataTables.responsive.css
+Stack Trace:
+#0 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-05 18:59:23 Error: [MissingControllerException] Controller class Sb-adminController could not be found.
+Exception Attributes: array (
+  'class' => 'Sb-adminController',
+  'plugin' => NULL,
+)
+Request URL: /sb-admin/bower_components/datatables-responsive/css/dataTables.responsive.css
+Stack Trace:
+#0 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-05 18:59:26 Error: [MissingControllerException] Controller class Sb-adminController could not be found.
+Exception Attributes: array (
+  'class' => 'Sb-adminController',
+  'plugin' => NULL,
+)
+Request URL: /sb-admin/css/timeline.css
+Stack Trace:
+#0 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-05 18:59:32 Error: [MissingControllerException] Controller class Sb-adminController could not be found.
+Exception Attributes: array (
+  'class' => 'Sb-adminController',
+  'plugin' => NULL,
+)
+Request URL: /sb-admin/bower_components/datatables-responsive/css/dataTables.responsive.css
+Stack Trace:
+#0 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

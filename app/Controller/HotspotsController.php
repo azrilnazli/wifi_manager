@@ -65,7 +65,7 @@ class HotspotsController extends AppController {
         if (!$this->Hotspot->exists()) {
             throw new NotFoundException(__('Invalid ticket'));
         }
-        $this->set('ticket', $this->Hotspot->findById($id));
+        $this->set('hotspot', $this->Hotspot->findById($id));
     }
 
     public function add() {
