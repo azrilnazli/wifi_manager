@@ -18,7 +18,7 @@ class PackagesController extends AppController {
         }
         $this->Package->recursive = 0;
         $this->paginate = array(
-            'fields' => array('Package.id', 'Package.title','Package.upload', 'Package.download'),
+            //'fields' => array('Package.id', 'Package.title','Package.upload', 'Package.download'),
             'limit'  => 20,
             'order'  => array( 'id' => 'desc' ),
                              
@@ -31,7 +31,7 @@ class PackagesController extends AppController {
         $keyword = $_GET['keyword'];
         $this->Package->recursive = 0;
         $this->paginate = array(
-                        'fields' => array('Package.id', 'Package.groupname','Package.role', 'Package.created'),
+                        //'fields' => array('Package.id', 'Package.groupname','Package.role', 'Package.created'),
                         'limit'  => 20,
                         'order'  => array( 'id' => 'desc' ),
                         'conditions' => array('Package.groupname LIKE' =>  $keyword . '%'),
@@ -62,7 +62,7 @@ class PackagesController extends AppController {
 
             $this->Package->create();
             if ($this->Package->save($this->request->data)) {
-                    $this->add_to_radius();           
+                    $this->add_to_radius($this->Package->id);           
                     $this->Session->setFlash(__('The package has been saved'), 'flash_success');
                     return $this->redirect(array('action' => 'index'));
             } else {
@@ -72,28 +72,39 @@ class PackagesController extends AppController {
     }
 
 
-    public function add_to_radius(){
-                $groupname = $this->request->data['Package']['title'];
+    public function add_to_radius($id=null){
+                # delete any record with matching groupname
+                $groupname = $id;
                 $conditions = array('groupname' => $groupname);
                 $this->Radgroupreply->deleteAll($conditions, FALSE);
 
-                # Password
+                # Mikrotik-Total-Limit 1 = 4100 Mb
                 $this->Radgroupreply->create();
                 $this->Radgroupreply->set(array(
-                            'groupname'  => $this->request->data['Package']['title'],
+                            'groupname'  => $id,
                             'op'        => ':=',
-                            'attribute' => 'Ascend-Xmit-Rate',
-                            'value'     => $this->request->data['Package']['upload']
+                            'attribute' => 'Mikrotik-Total-Limit-Gigawords',
+                            'value'     => $this->request->data['Package']['volume']
                             ));
                 $this->Radgroupreply->save();
 
-                # Simultaneous
+                # Ascend-Xmit-Rate
                 $this->Radgroupreply->create();
                 $this->Radgroupreply->set(array(
-                            'groupname' => $this->request->data['Package']['title'],
+                            'groupname' => $id,
+                                   'op' => ':=',
+                            'attribute' => 'Ascend-Xmit-Rate',
+                                'value' => $this->request->data['Package']['download'] 
+                            ));
+                $this->Radgroupreply->save();
+
+                # Ascend-Data-Rate
+                $this->Radgroupreply->create();
+                $this->Radgroupreply->set(array(
+                            'groupname' => $id,
                                    'op' => ':=',
                             'attribute' => 'Ascend-Data-Rate',
-                                'value' => $this->request->data['Package']['download']
+                                'value' => $this->request->data['Package']['upload'] 
                             ));
                 $this->Radgroupreply->save();
 
@@ -102,7 +113,7 @@ class PackagesController extends AppController {
        		    # Idle-Timeout
                 $this->Radgroupreply->create();
                 $this->Radgroupreply->set(array(
-                             'groupname' => $this->request->data['Package']['title'],
+                             'groupname' => $id,
                                    'op'  => ':=',
                             'attribute'  => 'Idle-Timeout',
                                 'value'   => 900
@@ -141,11 +152,12 @@ class PackagesController extends AppController {
             if(!empty($id)){
 
 
-                $this->Package->recursive= -1;
-                $package = $this->Package->findById($id);
+                #$this->Package->recursive= -1;
+                #$package = $this->Package->findById($id);
 
-                $groupname = $package['Package']['title'];
-                $conditions = array('groupname' => $groupname);
+                #$groupname = $package['Package']['title'];
+                #$conditions = array('groupname' => $groupname);
+                $conditions = array('groupname' => $id);
 
                 $this->Radgroupreply->deleteAll($conditions, FALSE);
 
@@ -177,7 +189,8 @@ class PackagesController extends AppController {
             # // Delete with array conditions similar to find()
             # $this->Comment->deleteAll(array('Comment.spam' => true), false);
 
-            $groupname = $package['Package']['title'];
+            $groupname = $id;
+            #$groupname = $package['Package']['title'];
             $conditions = array('groupname' => $groupname);
 
             $this->Radgroupreply->deleteAll($conditions, FALSE);

@@ -12,13 +12,25 @@ class HotspotsController extends AppController {
         #$this->Auth->allow('add');
     }
 
+    public function disconnect($username=null){
+
+        #App::import('Vendor', 'mikrotik');
+        $cmd = "/usr/bin/php -q /var/www/html/wifi_manager/app/webroot/mikrotik/routeros-api/examples/disconnect.php";
+        if(shell_exec($cmd)){
+        #       $this->Session->setFlash(__('The user has been disconnected'), 'flash_success');
+        #       return $this->redirect(array('action' => 'index'));       
+        } else {
+            echo 'failed';
+        }
+    }
+
     public function index() {
         if ($this->request->is('post')) {
             #debug($this->data);
         }
         $this->Hotspot->recursive = 0;
         $this->paginate = array(
-            'fields' => array('Hotspot.id', 'Hotspot.username','Hotspot.expired', 'Hotspot.created'),
+            'fields' => array('Hotspot.id', 'Package.title', 'Hotspot.username','Hotspot.expired', 'Hotspot.created'),
             'limit'  => 20,
             'order'  => array( 'id' => 'desc' ),
                              
@@ -154,7 +166,8 @@ class HotspotsController extends AppController {
          $this->Radusergroup->set(array(
             'username'  => $this->request->data['Hotspot']['username'],
             'priority'  => 1,
-            'groupname' => $package['Package']['title']
+            //'groupname' => $package['Package']['title']
+            'groupname' => $package['Package']['id']
          ));
          $this->Radusergroup->save();
 

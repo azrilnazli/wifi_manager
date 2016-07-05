@@ -70,12 +70,15 @@ Foreach( $packages as $package ){
                             'class'   => 'btn btn-outline btn-danger'
                         )
                 );
+
+
     $data[] = array( 
             "<center>{$checkbox}</center>",
             $package['Package']['id'],  
             $package['Package']['title'],  
-            $package['Package']['upload'],  
-            $package['Package']['download'],
+            ($package['Package']['upload']/1024) . " kbps",  
+            ($package['Package']['download']/1024) ." kbps",
+	        $this->Number->toReadableSize($package['Package']['volume']),
             "<center><a class='btn btn-outline btn-primary' href='/Packages/edit/{$package['Package']['id']}'>Edit</a> <a class='btn btn-outline btn-primary' href='/Packages/delete/{$package['Package']['id']}'>Delete</a </center>"
         );
 }
@@ -85,7 +88,9 @@ $sort_id        = $this->Paginator->sort('id');
 $sort_title     = $this->Paginator->sort('title');
 $sort_upload    = $this->Paginator->sort('upload');
 $sort_download  = $this->Paginator->sort('download');
-echo $this->Table->tableHeaders( array('', $sort_id, $sort_title, $sort_upload, $sort_download,null ) );
+$sort_volume    = $this->Paginator->sort('volume');
+
+echo $this->Table->tableHeaders( array('', $sort_id, $sort_title, $sort_upload, $sort_download,$sort_volume, null ) );
 echo $this->Table->tableCells( $data );
 #echo $this->Table->tableCells( array(
 #            array( '1', 'John', 'Doh', '1970-01-01'),

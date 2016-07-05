@@ -4126,3 +4126,334 @@ Stack Trace:
 #3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2016-07-04 22:57:12 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [/var/www/html/wifi_manager/app/Controller/HotspotsController.php, line 21]
+2016-07-04 22:57:12 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /Hotspots/index
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/w...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/w...', 21, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/w...', 21, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-05 00:53:52 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting ')' in [/var/www/html/wifi_manager/app/View/Themed/SbAdmin/Packages/index.ctp, line 77]
+2016-07-05 00:53:52 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting ')'
+Request URL: /Packages/index
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/w...', 77)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/w...', 77, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/w...', 77, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-05 00:56:46 Error: Fatal Error (4): syntax error, unexpected '/', expecting '}' in [/var/www/html/wifi_manager/app/View/Themed/SbAdmin/Packages/index.ctp, line 78]
+2016-07-05 00:56:46 Error: [FatalErrorException] syntax error, unexpected '/', expecting '}'
+Request URL: /Packages/index
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/w...', 78)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/w...', 78, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/w...', 78, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-05 00:57:04 Error: Fatal Error (4): syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in [/var/www/html/wifi_manager/app/View/Themed/SbAdmin/Packages/index.ctp, line 78]
+2016-07-05 00:57:04 Error: [FatalErrorException] syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING
+Request URL: /Packages/index
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/w...', 78)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/w...', 78, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/w...', 78, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-05 02:05:05 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'groupname' cannot be null
+Request URL: /Packages/add
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `wi...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1019): DboSource->execute('INSERT INTO `wi...')
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(1933): DboSource->create(Object(Radgroupreply), Array, Array)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(1751): Model->_doSave(NULL, Array)
+#5 /var/www/html/wifi_manager/app/Controller/PackagesController.php(89): Model->save()
+#6 /var/www/html/wifi_manager/app/Controller/PackagesController.php(65): PackagesController->add_to_radius()
+#7 [internal function]: PackagesController->add()
+#8 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PackagesController), Array)
+#9 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PackagesController), Object(CakeRequest))
+#11 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-07-05 07:47:36 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/html/wifi_manager/app/Controller/RadacctsController.php, line 22]
+2016-07-05 07:47:36 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /Packages/index
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/w...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/w...', 22, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/w...', 22, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-05 07:49:56 Error: [MissingActionException] Action RadacctsController::upload() could not be found.
+Exception Attributes: array (
+  'controller' => 'RadacctsController',
+  'action' => 'upload',
+)
+Request URL: /Hotspots/index
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Controller/Scaffold.php(152): Scaffold->_scaffold(Object(CakeRequest))
+#1 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(536): Scaffold->__construct(Object(RadacctsController), Object(CakeRequest))
+#2 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(495): Controller->_getScaffold(Object(CakeRequest))
+#3 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadacctsController), Object(CakeRequest))
+#5 /var/www/html/wifi_manager/lib/Cake/Core/Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#6 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/index.ctp(52): Object->requestAction('/Radaccts/uploa...')
+#7 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#8 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#9 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#10 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#11 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#12 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#13 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-07-05 07:51:20 Error: [MissingActionException] Action RadacctsController::download() could not be found.
+Exception Attributes: array (
+  'controller' => 'RadacctsController',
+  'action' => 'download',
+)
+Request URL: /Hotspots/index
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Controller/Scaffold.php(152): Scaffold->_scaffold(Object(CakeRequest))
+#1 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(536): Scaffold->__construct(Object(RadacctsController), Object(CakeRequest))
+#2 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(495): Controller->_getScaffold(Object(CakeRequest))
+#3 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadacctsController), Object(CakeRequest))
+#5 /var/www/html/wifi_manager/lib/Cake/Core/Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#6 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/index.ctp(52): Object->requestAction('/Radaccts/downl...')
+#7 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#8 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#9 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#10 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#11 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#12 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#13 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-07-05 07:51:47 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'in, SUM(`Radacct`.`acctouputoctets`) as out FROM `wifi_manager`.`radacct` AS `Ra' at line 1
+Request URL: /Hotspots/index
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT SUM(`Rad...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT SUM(`Rad...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT SUM(`Rad...', false)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Radacct), Array)
+#5 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#6 /var/www/html/wifi_manager/app/Controller/RadacctsController.php(25): Model->find('first', Array)
+#7 [internal function]: RadacctsController->volume('prepaid3')
+#8 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RadacctsController), Array)
+#9 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadacctsController), Object(CakeRequest))
+#11 /var/www/html/wifi_manager/lib/Cake/Core/Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#12 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/index.ctp(52): Object->requestAction('/Radaccts/volum...')
+#13 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#14 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#15 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#16 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#17 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#18 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#19 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2016-07-05 07:52:24 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Radacct.acctouputoctets' in 'field list'
+Request URL: /Hotspots/index
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT SUM(`Rad...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT SUM(`Rad...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT SUM(`Rad...', false)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Radacct), Array)
+#5 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#6 /var/www/html/wifi_manager/app/Controller/RadacctsController.php(25): Model->find('first', Array)
+#7 [internal function]: RadacctsController->volume('prepaid3')
+#8 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RadacctsController), Array)
+#9 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadacctsController), Object(CakeRequest))
+#11 /var/www/html/wifi_manager/lib/Cake/Core/Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#12 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/index.ctp(52): Object->requestAction('/Radaccts/volum...')
+#13 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#14 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#15 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#16 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#17 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#18 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#19 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2016-07-05 07:52:46 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' SUM(`Radacct`.`acctoutputoctets`) OUT FROM `wifi_manager`.`radacct` AS `Radacct' at line 1
+Request URL: /Hotspots/index
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT SUM(`Rad...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT SUM(`Rad...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT SUM(`Rad...', false)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Radacct), Array)
+#5 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#6 /var/www/html/wifi_manager/app/Controller/RadacctsController.php(25): Model->find('first', Array)
+#7 [internal function]: RadacctsController->volume('prepaid3')
+#8 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RadacctsController), Array)
+#9 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadacctsController), Object(CakeRequest))
+#11 /var/www/html/wifi_manager/lib/Cake/Core/Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#12 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/index.ctp(52): Object->requestAction('/Radaccts/volum...')
+#13 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#14 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#15 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#16 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#17 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#18 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#19 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2016-07-05 07:53:00 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'in, SUM(`Radacct`.`acctoutputoctets`) as out FROM `wifi_manager`.`radacct` AS `R' at line 1
+Request URL: /Hotspots/index
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT SUM(`Rad...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT SUM(`Rad...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT SUM(`Rad...', false)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Radacct), Array)
+#5 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#6 /var/www/html/wifi_manager/app/Controller/RadacctsController.php(25): Model->find('first', Array)
+#7 [internal function]: RadacctsController->volume('prepaid3')
+#8 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RadacctsController), Array)
+#9 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadacctsController), Object(CakeRequest))
+#11 /var/www/html/wifi_manager/lib/Cake/Core/Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#12 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/index.ctp(52): Object->requestAction('/Radaccts/volum...')
+#13 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#14 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#15 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#16 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#17 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#18 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#19 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2016-07-05 07:57:45 Error: Fatal Error (4): syntax error, unexpected ',' in [/var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/index.ctp, line 91]
+2016-07-05 07:57:45 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /Hotspots/index
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/w...', 91)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/w...', 91, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/w...', 91, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-05 08:14:57 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/index.ctp, line 83]
+2016-07-05 08:14:57 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /Hotspots/index
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/w...', 83)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/w...', 83, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/w...', 83, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-05 08:15:26 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Radacct.id' in 'field list'
+Request URL: /Hotspots/index
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Radacct...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Radacct...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `Radacct...', false)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Radacct), Array)
+#5 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#6 /var/www/html/wifi_manager/app/Controller/RadacctsController.php(38): Model->find('first', Array)
+#7 [internal function]: RadacctsController->status('prepaid3')
+#8 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RadacctsController), Array)
+#9 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadacctsController), Object(CakeRequest))
+#11 /var/www/html/wifi_manager/lib/Cake/Core/Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#12 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/index.ctp(83): Object->requestAction('/Radaccts/statu...')
+#13 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#14 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#15 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#16 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#17 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#18 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#19 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2016-07-05 11:17:35 Error: Fatal Error (1): Class 'RouterosAPI' not found in [/var/www/html/wifi_manager/app/Controller/HotspotsController.php, line 18]
+2016-07-05 11:17:35 Error: [FatalErrorException] Class 'RouterosAPI' not found
+Request URL: /Hotspots/disconnect/prepaid1
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Routeros...', '/var/www/html/w...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Routeros...', '/var/www/html/w...', 18, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Routeros...', '/var/www/html/w...', 18, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-05 11:24:37 Error: [MissingActionException] Action HotspotsController::mikrotik() could not be found.
+Exception Attributes: array (
+  'controller' => 'HotspotsController',
+  'action' => 'mikrotik',
+)
+Request URL: /Hotspots/mikrotik
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#2 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-07-05 11:32:23 Error: [MissingViewException] View file "Hotspots/disconnect.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Hotspots/disconnect.ctp',
+)
+Request URL: /Hotspots/disconnect/prepaid1
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#4 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-05 11:32:46 Error: [MissingViewException] View file "Hotspots/disconnect.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Hotspots/disconnect.ctp',
+)
+Request URL: /Hotspots/disconnect/prepaid1
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#4 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-05 11:33:00 Error: [MissingViewException] View file "Hotspots/disconnect.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Hotspots/disconnect.ctp',
+)
+Request URL: /Hotspots/disconnect/prepaid1
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#4 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-05 11:34:01 Error: [MissingViewException] View file "Hotspots/disconnect.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Hotspots/disconnect.ctp',
+)
+Request URL: /Hotspots/disconnect/prepaid1
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#4 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-05 11:43:07 Error: [MissingViewException] View file "Hotspots/disconnect.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Hotspots/disconnect.ctp',
+)
+Request URL: /Hotspots/disconnect/prepaid1
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#4 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

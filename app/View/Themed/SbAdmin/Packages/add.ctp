@@ -31,6 +31,22 @@
                 </div>
 
 <?php
+
+$base = 1;
+$options_vol = array(
+        $base*1     => '4 GB' ,
+        $base*2     => '8 GB' ,
+        $base*3    => '12 GB',
+        $base*4    => '20 GB',
+);
+
+$volume = $this->Form->input('volume', array(
+                                    'type' => 'select',
+                                    'options' => $options_vol,
+                                    'label'=> 'Volume Transfer',
+                                    'default' => $base,
+                                    'class' => 'form-control'));
+
 $options = array(
     '57344'     => '56k' ,
     '131072'    => '128k' ,
@@ -55,6 +71,11 @@ $download = $this->Form->input('download', array(
                                     'default' => 'download speed',
                                     'class' => 'form-control'));
 ?>
+
+    <div class="form-group">
+        <?=$volume;?>
+    </div>
+
     <div class="row form-group">
         <div class="col-sm-6"><div class="well"<><?=$upload;?></div></div>
         <div class="col-sm-6"><div class="well"<><?=$download;?></div></div>

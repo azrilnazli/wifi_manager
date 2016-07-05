@@ -13,7 +13,7 @@
 
 <div id="pantblhlp1" class="panel panel-info">
     <div class="panel-heading">
-        <h4>Edit Current Package</h4>
+        <h4>Create New Package</h4>
     </div>
 
     <?= $form;?>
@@ -31,6 +31,22 @@
                 </div>
 
 <?php
+
+$base = 1073741824;
+$options_vol = array(
+        $base*1     => '1 GB' ,
+        $base*5     => '5 GB' ,
+        $base*10    => '10 GB',
+        $base*20    => '20 GB',
+);
+
+$volume = $this->Form->input('volume', array(
+                                    'type' => 'select',
+                                    'options' => $options_vol,
+                                    'label'=> 'Volume Transfer',
+                                    'default' => $base,
+                                    'class' => 'form-control'));
+
 $options = array(
     '57344'     => '56k' ,
     '131072'    => '128k' ,
@@ -55,6 +71,11 @@ $download = $this->Form->input('download', array(
                                     'default' => 'download speed',
                                     'class' => 'form-control'));
 ?>
+
+    <div class="form-group">
+        <?=$volume;?>
+    </div>
+
     <div class="row form-group">
         <div class="col-sm-6"><div class="well"<><?=$upload;?></div></div>
         <div class="col-sm-6"><div class="well"<><?=$download;?></div></div>

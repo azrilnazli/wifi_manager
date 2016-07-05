@@ -8,6 +8,7 @@ CREATE TABLE packages (
     description text,
     upload   INT DEFAULT NULL,
     download INT DEFAULT NULL,
+    volume   BIGINT DEFAULT NULL,
     created  DATETIME DEFAULT NULL,
     modified DATETIME DEFAULT NULL
 );
