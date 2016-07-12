@@ -13,7 +13,7 @@
 
 <div id="pantblhlp1" class="panel panel-info">
     <div class="panel-heading">
-        <h4>Create New Ticket</h4>
+        <h4>Edit Current Ticket</h4>
     </div>
 
 
@@ -29,31 +29,32 @@
                     <label>Username</label>
                      <?= $this->Form->input('username', array('label'=> FALSE, 'class' => 'form-control')); ?>
                 </div>
-
                  <div class="form-group">
                     <label>Password</label>
                      <?= $this->Form->input('password', array('type' => 'text', 'label'=> FALSE, 'class' => 'form-control')); ?>
                 </div>
-
-                <div class="form-group">
-
-                <label>Expired On</label>
                 <?php
 $options = array(
-    '1' => '1 day' ,
-    '2' => '2 days' ,
-    '3' => '3 days' ,
-    '4' => '4 days' ,
-    '5' => '5 days' ,
-    '6' => '6 days' ,
-    '7' => '7 days' ,
+    '0' => '' ,
+    '1' => 'send disconnection request' ,
 
 );
-$this->Form->input('expired', array(
+$disconnect =  $this->Form->input('disconnect', array(
+                                    'type' => 'select',
+                                    'options' => $options,
+                                    'label'=> FALSE,
+                                    'default' => 0,
+                                    'class' => 'form-control')); 
+$options = array(
+    '0' => 'Active' ,
+    '1' => 'Disable' ,
+
+);
+$disconnect =  $this->Form->input('disconnect', array(
                                     'type' => 'select',
                                     'options' => $options, 
-                                    'label'=> FALSE, 
-                                    'default' => 'how many days ?',
+                                    'label'=> 'User connection status', 
+                                    'default' => 0,
                                     'class' => 'form-control')); 
 
 #$this->Form->input('expired');
@@ -63,7 +64,7 @@ $expired = $this->Form->input(
                                         'maxYear' => date('Y'),    
                                         'minYear' => date('Y'),    
                                         'dateFormat' => 'DMY',
-                                        'interval' => 60,
+                                        'interval' => 5,
                                         'separator' => '&nbsp;',
                                         'after' => '',
                                         'timeFormat' => 24,
@@ -73,9 +74,16 @@ $expired = $this->Form->input(
                                        )  
                             );
 ?>
-   <div class="well">
-        <?= $expired;?>
-   </div>
+<div class="form-group">
+<?=$disconnect ?>
+</div>
+
+   <div class="form-group">
+
+                <label>Expired On</label>
+<div class="well">
+<?= $expired;?>
+</div>
 
                 </div>
         </div>

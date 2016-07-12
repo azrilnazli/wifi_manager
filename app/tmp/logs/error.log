@@ -4755,3 +4755,105 @@ Request URL: /sb-admin/bower_components/datatables-responsive/css/dataTables.res
 Stack Trace:
 #0 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-07-06 02:32:52 Error: [MissingViewException] View file "Hotspots/disconnect.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Hotspots/disconnect.ctp',
+)
+Request URL: /Hotspots/disconnect
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#4 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-06 03:42:32 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null
+Request URL: /Packages/add
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `wi...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1019): DboSource->execute('INSERT INTO `wi...')
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(1933): DboSource->create(Object(Radgroupreply), Array, Array)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(1751): Model->_doSave(NULL, Array)
+#5 /var/www/html/wifi_manager/app/Controller/PackagesController.php(90): Model->save()
+#6 /var/www/html/wifi_manager/app/Controller/PackagesController.php(66): PackagesController->add_to_radius('12')
+#7 [internal function]: PackagesController->add()
+#8 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PackagesController), Array)
+#9 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PackagesController), Object(CakeRequest))
+#11 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-07-06 04:12:09 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'groupname' cannot be null
+Request URL: /Packages/edit/13
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `wi...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1019): DboSource->execute('INSERT INTO `wi...')
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(1933): DboSource->create(Object(Radgroupreply), Array, Array)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(1751): Model->_doSave(NULL, Array)
+#5 /var/www/html/wifi_manager/app/Controller/PackagesController.php(90): Model->save()
+#6 /var/www/html/wifi_manager/app/Controller/PackagesController.php(137): PackagesController->add_to_radius()
+#7 [internal function]: PackagesController->edit('13')
+#8 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PackagesController), Array)
+#9 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PackagesController), Object(CakeRequest))
+#11 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-07-06 04:13:24 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'groupname' cannot be null
+Request URL: /Packages/edit/13
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `wi...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1019): DboSource->execute('INSERT INTO `wi...')
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(1933): DboSource->create(Object(Radgroupreply), Array, Array)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(1751): Model->_doSave(NULL, Array)
+#5 /var/www/html/wifi_manager/app/Controller/PackagesController.php(90): Model->save()
+#6 /var/www/html/wifi_manager/app/Controller/PackagesController.php(137): PackagesController->add_to_radius()
+#7 [internal function]: PackagesController->edit('13')
+#8 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PackagesController), Array)
+#9 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PackagesController), Object(CakeRequest))
+#11 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-07-12 17:42:33 Error: [MissingControllerException] Controller class RadacctController could not be found.
+Exception Attributes: array (
+  'class' => 'RadacctController',
+  'plugin' => NULL,
+)
+Request URL: /Radacct/disconnect/1
+Stack Trace:
+#0 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-12 17:43:07 Error: [MissingControllerException] Controller class HotspotController could not be found.
+Exception Attributes: array (
+  'class' => 'HotspotController',
+  'plugin' => NULL,
+)
+Request URL: /Hotspot/disconnect/1
+Stack Trace:
+#0 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-12 17:49:31 Error: [MissingViewException] View file "Hotspots/disconnect.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Hotspots/disconnect.ctp',
+)
+Request URL: /Hotspots/disconnect/1
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#4 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-12 17:52:18 Error: [MissingViewException] View file "Hotspots/disconnect.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Hotspots/disconnect.ctp',
+)
+Request URL: /Hotspots/disconnect/1
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#4 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

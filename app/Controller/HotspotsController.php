@@ -12,16 +12,16 @@ class HotspotsController extends AppController {
         #$this->Auth->allow('add');
     }
 
-    public function disconnect($username=null){
+    public function disconnect($id=null){
 
-        #App::import('Vendor', 'mikrotik');
-        $cmd = "/usr/bin/php -q /var/www/html/wifi_manager/app/webroot/mikrotik/routeros-api/examples/disconnect.php";
-        if(shell_exec($cmd)){
-        #       $this->Session->setFlash(__('The user has been disconnected'), 'flash_success');
-        #       return $this->redirect(array('action' => 'index'));       
+        $this->Hotspot->read(null,$id);
+        $this->Hotspot->set(array('disconnect'=> 1));                
+        if( $this->Hotspot->save() ) {
+               $this->Session->setFlash(__('Sent for disconnection'), 'flash_success');
         } else {
-            echo 'failed';
+               $this->Session->setFlash(__('Failed to disconnect'), 'flash_error');
         }
+        return $this->redirect(array('action' => 'index'));       
     }
 
     public function index() {
@@ -108,6 +108,17 @@ class HotspotsController extends AppController {
             'value'     => $this->request->data['Hotspot']['password']
         ));
         $this->Radcheck->save();
+
+        # Mikrotik-Rate-Limit
+        #$this->Radcheck->create();
+        #$this->Radcheck->set(array(
+        #    'username'  => $this->request->data['Hotspot']['username'],
+        #    'op'        => '=',
+        #    'attribute' => 'Mikrotik-Rate-Limit',
+        #    'value'     => "56k/56k"
+        #));
+        #$this->Radcheck->save();
+
 
         # Simultaneous
         $this->Radcheck->create();

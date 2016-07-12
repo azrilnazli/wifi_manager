@@ -81,13 +81,13 @@ class PackagesController extends AppController {
 
                 # Mikrotik-Total-Limit 1 = 4100 Mb
                 $this->Radgroupreply->create();
-                #$this->Radgroupreply->set(array(
-                #            'groupname'  => $id,
-                #            'op'        => ':=',
-                #            'attribute' => 'Mikrotik-Total-Limit-Gigawords',
-                #            'value'     => $this->request->data['Package']['volume']
-                #            ));
-                #$this->Radgroupreply->save();
+                $this->Radgroupreply->set(array(
+                            'groupname'  => $id,
+                            'op'        => ':=',
+                            'attribute' => 'Mikrotik-Total-Limit',
+                            'value'     => $this->request->data['Package']['volume']
+                            ));
+                $this->Radgroupreply->save();
 
                 # Ascend-Xmit-Rate
                 $this->Radgroupreply->create();
@@ -109,6 +109,16 @@ class PackagesController extends AppController {
                             ));
                 $this->Radgroupreply->save();
 
+
+                # Mikrotik Rate Limit
+                $this->Radgroupreply->create();
+                $this->Radgroupreply->set(array(
+                            'groupname' => $id,
+                                   'op' => '=',
+                            'attribute' => 'Mikrotik-Rate-Limit',
+                                'value' => '56k/56k'
+                            ));
+                $this->Radgroupreply->save();
 
 
        		    # Idle-Timeout
@@ -134,7 +144,7 @@ class PackagesController extends AppController {
         if ($this->request->is('post') || $this->request->is('put')) {
             $this->request->data['Package']['user_id'] = $this->Auth->user('id');
             if ($this->Package->save($this->request->data)) {
-                $this->add_to_radius();
+                $this->add_to_radius($id);
                 $this->Session->setFlash(__('The ticket has been saved'), 'flash_success');
                 return $this->redirect(array('action' => 'index'));
             }

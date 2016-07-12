@@ -81,6 +81,7 @@ if($hotspots){
             $this->Time->timeAgoInWords($hotspot['Hotspot']['expired']),  
             $this->Time->timeAgoInWords($hotspot['Hotspot']['created']),  
             "<center>".$this->requestAction('/Radaccts/status/' . $hotspot['Hotspot']['username'])."</center>",
+            "<center><a href='/Hotspots/disconnect/{$hotspot['Hotspot']['id']}'>".$this->requestAction('/Radaccts/disconnect/' . $hotspot['Hotspot']['username'])."</a></center>",
             "<center><a class='btn btn-outline btn-success' href='/Hotspots/view/{$hotspot['Hotspot']['id']}'><span class='glyphicon glyphicon-search'></span></a> <a class='btn btn-outline btn-primary' href='/Hotspots/edit/{$hotspot['Hotspot']['id']}'><span class='glyphicon glyphicon-edit'></span></a> <a class='btn btn-outline btn-danger' href='/Hotspots/delete/{$hotspot['Hotspot']['id']}'><span class='glyphicon glyphicon-trash'></span></a></center>"
         );
     } // Foreach
@@ -91,7 +92,7 @@ if($hotspots){
         $sort_package = $this->Paginator->sort('Package.id','Package');
         $sort_expired = $this->Paginator->sort('expired');
         $sort_created = $this->Paginator->sort('created');
-        echo $this->Table->tableHeaders( array('', $sort_id, $sort_username, $sort_package,'Volume',$sort_expired, $sort_created,'Status',null ) );
+        echo $this->Table->tableHeaders( array('', $sort_id, $sort_username, $sort_package,'Volume',$sort_expired, $sort_created,'Status','Disconnect',null ) );
         echo $this->Table->tableCells( $data );
 
         echo $this->Table->end();

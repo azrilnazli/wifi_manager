@@ -43,9 +43,30 @@ class RadacctsController extends AppController {
 
         if($data){
             $ip = $data['Radacct']['framedipaddress'];
-            return "<span class='btn btn btn-success'><span class='glyphicon glyphicon-user pull-left'></span></span>";
+            return "<span class='btn btn btn-success'><span class='glyphicon glyphicon-user'></span></span>";
         } else {
-            return "<span class='fluid btn btn-danger'><span class='glyphicon glyphicon-user pull-left'></span></span>";
+            return "<span class='fluid btn btn-danger'><span class='glyphicon glyphicon-user''></span></span>";
+        }
+    }
+
+
+   function disconnect($username=null){
+        
+        $options = array(
+            'fields' => 'Radacct.framedipaddress',  
+            'conditions' => array('AND' => array (  
+                                                    'Radacct.username'      => $username,
+                                                    'Radacct.acctstoptime'  => null
+                                                )
+                                 )
+        );
+        $data = $this->Radacct->find('first', $options);
+        
+        if($data){
+            $ip = $data['Radacct']['framedipaddress'];
+            return "<span class='btn btn btn-danger'><span class='fa fa-power-off'></span></span>";
+        } else {
+            #return "<span class='fluid btn btn-danger'><span class='glyphicon glyphicon-user pull-left'></span></span>";
         }
     }
 

@@ -31,5 +31,5 @@
     <?= $this->Element('js');?>
 </body>
 </html>
-<?php #echo $this->element('sql_dump');?>
+<?php echo $this->element('sql_dump');?>
 

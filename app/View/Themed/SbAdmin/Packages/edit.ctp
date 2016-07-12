@@ -13,7 +13,7 @@
 
 <div id="pantblhlp1" class="panel panel-info">
     <div class="panel-heading">
-        <h4>Create New Package</h4>
+        <h4>Edit Current Package</h4>
     </div>
 
     <?= $form;?>
@@ -32,12 +32,10 @@
 
 <?php
 
-$base = 1073741824;
+#$base = 1073741824;
+$base = 1048576; // 10MB
 $options_vol = array(
-        $base*1     => '1 GB' ,
-        $base*5     => '5 GB' ,
-        $base*10    => '10 GB',
-        $base*20    => '20 GB',
+        $base*1     => '10 MB' ,
 );
 
 $volume = $this->Form->input('volume', array(
@@ -73,8 +71,9 @@ $download = $this->Form->input('download', array(
 ?>
 
     <div class="row form-group">
-        <div class="col-sm-6"><div class="well"<><?=$upload;?></div></div>
-        <div class="col-sm-6"><div class="well"<><?=$download;?></div></div>
+        <div class="col-sm-4"><div class="well"<><?=$volume;?></div></div>
+        <div class="col-sm-4"><div class="well"<><?=$upload;?></div></div>
+        <div class="col-sm-4"><div class="well"<><?=$download;?></div></div>
     </div>
 
         </div> <!-- row -->

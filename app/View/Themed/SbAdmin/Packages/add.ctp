@@ -32,12 +32,10 @@
 
 <?php
 
-$base = 1;
+#$base = 1073741824;
+$base = 1048576; // 10MB
 $options_vol = array(
-        $base*1     => '4 GB' ,
-        $base*2     => '8 GB' ,
-        $base*3    => '12 GB',
-        $base*4    => '20 GB',
+        $base*1     => '10 MB' ,
 );
 
 $volume = $this->Form->input('volume', array(
@@ -73,8 +71,9 @@ $download = $this->Form->input('download', array(
 ?>
 
     <div class="row form-group">
-        <div class="col-sm-6"><div class="well"<><?=$upload;?></div></div>
-        <div class="col-sm-6"><div class="well"<><?=$download;?></div></div>
+        <div class="col-sm-4"><div class="well"<><?=$volume;?></div></div>
+        <div class="col-sm-4"><div class="well"<><?=$upload;?></div></div>
+        <div class="col-sm-4"><div class="well"<><?=$download;?></div></div>
     </div>
 
         </div> <!-- row -->
