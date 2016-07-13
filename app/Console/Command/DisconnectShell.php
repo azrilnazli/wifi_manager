@@ -71,8 +71,20 @@ class DisconnectShell extends AppShell {
                 $disconnect = "User-Name=\"{$data['Radacct']['username']}\", NAS-IP-Address=\"{$data['Radacct']['nasipaddress']}\",  Acct-Session-Id=\"{$data['Radacct']['acctsessionid']}\", Called-Station-Id=\"{$data['Radacct']['calledstationid']}\", Framed-IP-Address=\"{$data['Radacct']['framedipaddress']}\" ";
                 $cmd = "echo -e {$disconnect} | radclient -n 1 -r 3 {$data['Radacct']['nasipaddress']}:3799 disconnect testing123 ";
                 if( shell_exec($cmd)) {
-            #debug($result);
+                    
                     $this->out("User {$username} has been disconnected", true);
+                    
+
+                    # clear disconnect
+                    $this->Radacct->read(null,  $data['Radacct']['radacctid']);
+                    $this->Radacct->set(
+                            array(
+                                    'acctstoptime = NOW()'
+                                )
+                            );
+                    $this->Radacct->save();
+
+                    # clear disconnect
                     $this->Hotspot->read(null,  $user['Hotspot']['id']);
                     $this->Hotspot->set(
                             array(

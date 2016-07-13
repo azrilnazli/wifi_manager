@@ -5,6 +5,9 @@
                         <li>
                             <a href="/"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
+                          <li>
+                            <a href="/Radaccts/system"><i class="fa fa-signal fa-fw"></i> System</a>
+                        </li>
                         <li>
                             <?= $this->Element('/nav/sidebar/user');?>
                         </li>
