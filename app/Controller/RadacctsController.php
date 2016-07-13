@@ -114,6 +114,10 @@ class RadacctsController extends AppController {
                                     '(Radacct.acctinputoctets + Radacct.acctoutputoctets) as volume',
                                     'Radacct.acctstarttime',
                                     'Radacct.framedipaddress',
+                                    'Radacct.nasipaddress',
+                                    'Radacct.acctsessionid',
+                                    'Radacct.username',
+                                    'Radacct.calledstationid',
                                 ),
                 'conditions' => array('Radacct.username' => $username),
             );

@@ -1,0 +1,3 @@
+User-Name="17113582" ,NAS-IP-Address="192.168.10.1"  ,Acct-Session-Id="8040000b" ,Called-Station-Id="hotspot1" ,Framed-IP-Address="192.168.88.242"
+
+

@@ -9,6 +9,9 @@
                             <?= $this->Element('/nav/sidebar/user');?>
                         </li>
                         <li>
+                            <?= $this->Element('/nav/sidebar/nas');?>
+                        </li>
+                        <li>
                             <?= $this->Element('/nav/sidebar/package');?>
                         </li>
                         <li>

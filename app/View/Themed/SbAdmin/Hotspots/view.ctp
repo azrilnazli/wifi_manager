@@ -26,7 +26,6 @@
         <dt>Idle Timeout</dt>
         <dd>15 minute</dd>
     </dl>
-
     </div>
 </div>
         <?php
@@ -44,6 +43,14 @@
             $row[$k]['framedipaddress'] = $data['Radacct']['framedipaddress'];
             $row[$k]['duration']= $data[0]['duration'];
             $row[$k]['volume']= $this->Number->toReadableSize($data[0]['volume']);
+
+            $disconnect = null;
+            $cmd = null;
+            if( $row[$k]['duration'] == null ){
+                $disconnect = "User-Name=\"{$data['Radacct']['username']}\", NAS-IP-Address=\"{$data['Radacct']['nasipaddress']}\",  Acct-Session-Id=\"{$data['Radacct']['acctsessionid']}\", Called-Station-Id=\"{$data['Radacct']['calledstationid']}\", Framed-IP-Address=\"{$data['Radacct']['framedipaddress']}\" ";
+                $cmd = "echo -e {$disconnect} | radclient -n 1 -r 3 {$data['Radacct']['nasipaddress']}:3799 disconnect testing123 ";
+                #echo $cmd;
+            }
             $total_time     += $data[0]['second'];
             $total_volume   += $data[0]['volume'];
         endforeach;

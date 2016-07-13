@@ -158,7 +158,7 @@ class HotspotsController extends AppController {
         #$this->Radcheck->set(array(
         #    'username'  => $this->request->data['Hotspot']['username'],
         #    'op'        => '=',
-        #    'attribute' => 'Mikrotik-Rate-Limit',
+        #    'attribute' => 'Mikrotik-Total-Limit',
         #    'value'     => "56k/56k"
         #));
         #$this->Radcheck->save();
