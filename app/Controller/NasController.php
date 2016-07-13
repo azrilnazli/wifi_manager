@@ -53,7 +53,7 @@ class NasController extends AppController {
         if (!$this->Nas->exists()) {
             throw new NotFoundException(__('Invalid Nas'));
         }
-        $this->set('Nas', $this->Nas->findById($id));
+        $this->set('nas', $this->Nas->findById($id));
     }
 
     public function add() {

@@ -27,9 +27,9 @@ unset($url['url']);
 ?>
 <ul class="pagination">
             <?php
-                echo $this->Paginator->prev(__('&laquo;'), array('tag' => 'li', 'escape' => FALSE), null, array('tag' => 'li','class' => 'disabled','disabledTag' => 'a', 'escape' => FALSE));
+                echo $this->Paginator->prev('<span class="glyphicon glyphicon-triangle-left"></span>', array('tag' => 'li', 'escape' => FALSE), null, array('tag' => 'li','class' => 'disabled','disabledTag' => 'a', 'escape' => FALSE));
                 echo $this->Paginator->numbers(array( 'separator' => '','currentTag' => 'a', 'currentClass' => 'active','tag' => 'li','first' => 1));
-                echo $this->Paginator->next(__('&raquo;'), array('tag' => 'li', 'escape' => FALSE), null, array('tag' => 'li','class' => 'disabled','disabledTag' => 'a', 'escape' => FALSE));
+                echo $this->Paginator->next('<span class="glyphicon glyphicon-triangle-right"></span>', array('tag' => 'li', 'escape' => FALSE), null, array('tag' => 'li','class' => 'disabled','disabledTag' => 'a', 'escape' => FALSE));
             ?>
 </ul>
 

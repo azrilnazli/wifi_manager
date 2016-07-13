@@ -13,7 +13,7 @@
 
 <div id="pantblhlp1" class="panel panel-info">
     <div class="panel-heading">
-        <h4>Create New Package</h4>
+        <h4><span class="glyphicon glyphicon-floppy-disk"></span> Create New Package</h4>
     </div>
 
     <?= $form;?>
@@ -85,8 +85,8 @@ $download = $this->Form->input('download', array(
 </div> <!-- panel -->
 
 <div class="panel-footer">
-    <a class="btn btn-default" href="/Users/index">Back</a>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <a class="btn btn-default" href="/Packages/index"><span class="glyphicon glyphicon-hand-left"></span> Back</a>
+    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-save"></span> Save</button>
 </div>
 <?= $this->Form->end(); ?>
 </div>

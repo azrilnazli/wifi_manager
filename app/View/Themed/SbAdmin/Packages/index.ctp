@@ -23,8 +23,8 @@ echo $search_bar ='
 <form action ="/Packages/mass_delete" method="POST">
 <?php
 
-$create  = '<span><a class="btn btn-primary" href="/Packages/add">Create</a></span>';;
-$delete  = '<span><button type="submit" class="btn btn-danger" onclick="if (confirm(&quot;Are you sure you wish to delete these tickets ?&quot;)) { document.post_57624a6f587b2226536133.submit(); } event.returnValue = false; return false;">Delete</button></span>';;
+$create  = '<span><a class="btn btn-primary" href="/Packages/add"><span class="glyphicon glyphicon-plus-sign"></span> Create</a></span>';;
+$delete  = '<span><button type="submit" class="btn btn-danger" onclick="if (confirm(&quot;Are you sure to delete these packages ?&quot;)) { document.post_57624a6f587b2226536133.submit(); } event.returnValue = false; return false;"><span class="glyphicon glyphicon-trash"></span> Delete</button></span>';;
 $paginator = $this->Element('paginator');
 $footer ="<table style='width:100%;height:20px'  border='0'><tr><td>{$delete}&nbsp;{$create}</td><td><span class='pull-right'>{$paginator}</span></td></tr></table>";
 
@@ -37,7 +37,7 @@ echo $this->Table->create(
            'striped' => TRUE, 
            'cols_width' => array( '20px','20px', '100px', '20px', '10px','60px' ), 
            'panel_class' => 'panel-info', 
-           'panel_heading' => '<h4>Package Management Panel</h4>', 
+           'panel_heading' => '<h4><span class="glyphicon glyphicon-tasks"></span> Package Management Panel</h4>', 
            'panel_body' => '', 
            'panel_footer' => $footer, 
            'style' => '' ) 
@@ -79,16 +79,17 @@ Foreach( $packages as $package ){
             strToUpper( $package['Package']['upload'] ),  
             strToUpper( $package['Package']['download'] ),
 	        $this->Number->toReadableSize($package['Package']['volume']),
-            "<center><a class='btn btn-outline btn-primary' href='/Packages/edit/{$package['Package']['id']}'>Edit</a> <a class='btn btn-outline btn-primary' href='/Packages/delete/{$package['Package']['id']}'>Delete</a </center>"
+            "<center><a class='btn btn-outline btn-success' href='/Packages/view/{$package['Package']['id']}'><span class='glyphicon glyphicon-search'></span></a> <a class='btn btn-outline btn-primary' href='/Packages/edit/{$package['Package']['id']}'><span class='glyphicon glyphicon-edit'></span></a> <a class='btn btn-outline btn-danger' href='/Packages/delete/{$package['Package']['id']}'><span class='glyphicon glyphicon-trash'></span></a></center>"
+            #"<center><a class='btn btn-outline btn-primary' href='/Packages/edit/{$package['Package']['id']}'>Edit</a> <a class='btn btn-outline btn-primary' href='/Packages/delete/{$package['Package']['id']}'>Delete</a </center>"
         );
 }
 
 #debug($data);
-$sort_id        = $this->Paginator->sort('id');
-$sort_title     = $this->Paginator->sort('title');
-$sort_upload    = $this->Paginator->sort('upload');
-$sort_download  = $this->Paginator->sort('download');
-$sort_volume    = $this->Paginator->sort('volume');
+$sort_id        = $this->Paginator->sort('id','<span class="glyphicon glyphicon-sort"></span> ID',array('escape' => FALSE) );
+$sort_title     = $this->Paginator->sort('title', '<span class="glyphicon glyphicon-sort"></span> Title',array('escape' => FALSE));
+$sort_upload    = $this->Paginator->sort('upload','<span class="glyphicon glyphicon-sort"></span> Upload',array('escape' => FALSE));
+$sort_download  = $this->Paginator->sort('download', '<span class="glyphicon glyphicon-sort"></span> Download',array('escape' => FALSE));
+$sort_volume    = $this->Paginator->sort('volume', '<span class="glyphicon glyphicon-sort"></span> Volume',array('escape' => FALSE));
 
 echo $this->Table->tableHeaders( array('', $sort_id, $sort_title, $sort_upload, $sort_download,$sort_volume, null ) );
 echo $this->Table->tableCells( $data );

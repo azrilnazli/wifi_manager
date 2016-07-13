@@ -79,7 +79,8 @@ Foreach( $nass as $nas ){
             $nas['Nas']['nasname'],  
             $nas['Nas']['secret'],
 	        $nas['Nas']['description'],
-            "<center><a class='btn btn-outline btn-primary' href='/Nas/edit/{$nas['Nas']['id']}'>Edit</a> <a class='btn btn-outline btn-primary' href='/Nas/delete/{$nas['Nas']['id']}'>Delete</a </center>"
+            "<center><a class='btn btn-outline btn-success' href='/Nas/view/{$nas['Nas']['id']}'><span class='glyphicon glyphicon-search'></span></a> <a class='btn btn-outline btn-primary' href='/Nas/edit/{$nas['Nas']['id']}'><span class='glyphicon glyphicon-edit'></span></a> <a class='btn btn-outline btn-danger' href='/Nas/delete/{$nas['Nas']['id']}'><span class='glyphicon glyphicon-trash'></span></a></center>"
+            #"<center><a class='btn btn-outline btn-primary' href='/Nas/edit/{$nas['Nas']['id']}'>Edit</a> <a class='btn btn-outline btn-primary' href='/Nas/delete/{$nas['Nas']['id']}'>Delete</a </center>"
         );
 }
 

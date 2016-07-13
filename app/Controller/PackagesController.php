@@ -53,7 +53,7 @@ class PackagesController extends AppController {
         if (!$this->Package->exists()) {
             throw new NotFoundException(__('Invalid ticket'));
         }
-        $this->set('ticket', $this->Package->findById($id));
+        $this->set('package', $this->Package->findById($id));
     }
 
     public function add() {
