@@ -11,8 +11,26 @@ class RadacctsController extends AppController {
  * @var mixed
  */
 	public $scaffold;
+    
+    public $theme = 'SbAdmin';
 
-
+    public function index() {
+        $this->paginate = array(
+                'fields'     => array(
+                                    'Radacct.username',
+                                    'Radacct.calledstationid',
+                                    'time_to_sec(timediff(Radacct.acctstoptime,Radacct.acctstarttime)) as second',
+                                    'timediff(Radacct.acctstoptime,Radacct.acctstarttime) as duration',
+                                    '(Radacct.acctinputoctets + Radacct.acctoutputoctets) as volume',
+                                    'Radacct.acctstarttime',
+                                    'Radacct.framedipaddress',
+                                ),
+               // 'conditions' => array('Radacct.username' => $username),
+                'limit'  => 20,
+                'order'  => array( 'Radacct.radacctid' => 'desc' ),
+            );
+        $this->set( 'radaccts', $this->paginate() );
+    }
 
     function volume($username=null){
        
@@ -28,6 +46,21 @@ class RadacctsController extends AppController {
         $total = $data[0]['bytes_in'] + $data[0]['bytes_out'];
         return $total;
     }
+
+    function total_volume(){
+
+        $options = array(
+            'fields' => array(
+                                'SUM(Radacct.acctinputoctets) as bytes_in',
+                                'SUM(Radacct.acctoutputoctets) as bytes_out',
+                            ),
+        );
+        $data = $this->Radacct->find('first', $options);
+
+        $total = $data[0]['bytes_in'] + $data[0]['bytes_out'];
+        return $total;
+    }
+
 
    function status($username=null){
 

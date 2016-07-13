@@ -5051,3 +5051,84 @@ Stack Trace:
 #3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2016-07-13 22:13:20 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/html/wifi_manager/app/View/Themed/SbAdmin/Radaccts/index.ctp, line 23]
+2016-07-13 22:13:20 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /Radaccts
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/w...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/w...', 23, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/w...', 23, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-13 22:16:16 Error: Fatal Error (4): syntax error, unexpected $end in [/var/www/html/wifi_manager/app/View/Themed/SbAdmin/Radaccts/index.ctp, line 43]
+2016-07-13 22:16:16 Error: [FatalErrorException] syntax error, unexpected $end
+Request URL: /Radaccts
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/w...', 43)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/w...', 43, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/w...', 43, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-13 22:22:17 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: Failed to parse time string (@) at position 0 (@): Unexpected character
+Request URL: /
+Stack Trace:
+#0 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Radaccts/index.ctp(4): DateTime->__construct('@')
+#1 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Radaccts/index.ctp(23): secondsToTime(NULL)
+#2 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#3 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#4 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#5 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#6 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#7 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadacctsController), Object(CakeRequest))
+#8 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2016-07-13 22:23:20 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: Failed to parse time string (@) at position 0 (@): Unexpected character
+Request URL: /
+Stack Trace:
+#0 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Radaccts/index.ctp(4): DateTime->__construct('@')
+#1 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Radaccts/index.ctp(23): secondsToTime(NULL)
+#2 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#3 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#4 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#5 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#6 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#7 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadacctsController), Object(CakeRequest))
+#8 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2016-07-13 22:23:31 Error: [Exception] DateTime::__construct(): Failed to parse time string (@Array) at position 0 (@): Unexpected character
+Request URL: /
+Stack Trace:
+#0 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Radaccts/index.ctp(4): DateTime->__construct('@Array')
+#1 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Radaccts/index.ctp(23): secondsToTime(Array)
+#2 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#3 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#4 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#5 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#6 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#7 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadacctsController), Object(CakeRequest))
+#8 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2016-07-13 22:24:59 Error: [MissingActionException] Action RadacctsController::total_time() could not be found.
+Exception Attributes: array (
+  'controller' => 'RadacctsController',
+  'action' => 'total_time',
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Controller/Scaffold.php(152): Scaffold->_scaffold(Object(CakeRequest))
+#1 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(536): Scaffold->__construct(Object(RadacctsController), Object(CakeRequest))
+#2 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(495): Controller->_getScaffold(Object(CakeRequest))
+#3 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadacctsController), Object(CakeRequest))
+#5 /var/www/html/wifi_manager/lib/Cake/Core/Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#6 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Radaccts/index.ctp(21): Object->requestAction('/Radaccts/total...')
+#7 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#8 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#9 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#10 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#11 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#12 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadacctsController), Object(CakeRequest))
+#13 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
