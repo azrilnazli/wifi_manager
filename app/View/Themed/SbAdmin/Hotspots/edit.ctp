@@ -33,7 +33,7 @@
                     <label>Password</label>
                      <?= $this->Form->input('password', array('type' => 'text', 'label'=> FALSE, 'class' => 'form-control')); ?>
                 </div>
-                <div class="col-lg-6">
+                <div class="form-group">
                             <label>Concurrent</label>
                             <?= $this->Form->input('concurrent', array('label'=> FALSE, 'class' => 'form-control')); ?>
                 </div>
