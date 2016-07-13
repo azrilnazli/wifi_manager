@@ -15,7 +15,7 @@ class RadacctsController extends AppController {
     public $theme = 'SbAdmin';
     
     # system 
-    public function system(){}
+    public function info(){}
 
     public function index() {
         $this->paginate = array(
