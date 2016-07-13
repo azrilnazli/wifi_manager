@@ -1,6 +1,6 @@
 <?php
 $search_package = '
-<form action ="/Package/search" method="GET">
+<form action ="/Packages/search" method="GET">
 <div class="input-group custom-search-form">
     <input type="text" name="keyword" class="form-control" placeholder="Search...">
     <span class="input-group-btn">

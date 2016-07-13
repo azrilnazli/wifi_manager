@@ -43,7 +43,7 @@ class HotspotsController extends AppController {
         $keyword = $_GET['keyword'];
         $this->Hotspot->recursive = 0;
         $this->paginate = array(
-                        'fields' => array('Hotspot.id', 'Hotspot.username','Hotspot.role', 'Hotspot.created'),
+                        'fields' => array('Hotspot.id', 'Package.title', 'Hotspot.username','Hotspot.expired', 'Hotspot.created'),
                         'limit'  => 20,
                         'order'  => array( 'id' => 'desc' ),
                         'conditions' => array('Hotspot.username LIKE' =>  $keyword . '%'),

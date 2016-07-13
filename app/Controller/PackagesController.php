@@ -34,7 +34,7 @@ class PackagesController extends AppController {
                         //'fields' => array('Package.id', 'Package.groupname','Package.role', 'Package.created'),
                         'limit'  => 20,
                         'order'  => array( 'id' => 'desc' ),
-                        'conditions' => array('Package.groupname LIKE' =>  $keyword . '%'),
+                        'conditions' => array('Package.title LIKE' =>  $keyword . '%'),
                                                                 
                         );
         $results =  $this->paginate();
