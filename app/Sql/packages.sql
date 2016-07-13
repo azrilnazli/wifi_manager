@@ -6,8 +6,8 @@ CREATE TABLE packages (
     user_id INT,
     title VARCHAR(50),
     description text,
-    upload   INT DEFAULT NULL,
-    download INT DEFAULT NULL,
+    upload  VARCHAR(50) DEFAULT NULL,
+    download VARCHAR(50) DEFAULT NULL,
     volume   BIGINT DEFAULT NULL,
     created  DATETIME DEFAULT NULL,
     modified DATETIME DEFAULT NULL

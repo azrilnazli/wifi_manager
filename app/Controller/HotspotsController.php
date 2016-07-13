@@ -4,7 +4,7 @@ class HotspotsController extends AppController {
 
     public $theme = 'SbAdmin';
     public $helpers = array( 'Table' );
-    public $uses = array('Hotspot','Radcheck','Radusergroup');
+    public $uses = array('Hotspot','Radcheck','Radusergroup', 'Radacct');
 
 
     public function beforeFilter() {
@@ -68,6 +68,50 @@ class HotspotsController extends AppController {
         $this->set('hotspot', $this->Hotspot->findById($id));
     }
 
+    function ticket(){
+        $packages = $this->Hotspot->Package->find('list');
+        $this->set(array('packages' => $packages));
+
+        if ($this->request->is('post')) {
+            $this->Hotspot->set($this->request->data);
+            if($this->Hotspot->validates()){
+
+                for($n=0;$n<$this->request->data['Hotspot']['number_of_tickets']; $n++){
+                    // do stuff with valid data
+                    $chars = "0123456789";
+                    $username = "";
+                    for ($i = 0; $i < 8; $i++) {
+                        $username .= $chars[mt_rand(0, strlen($chars)-1)];
+                    }
+
+                    $chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                    $password = "";
+                    for ($i = 0; $i < 5; $i++) {
+                        $password .= $chars[mt_rand(0, strlen($chars)-1)];
+                    }
+                    
+                    $this->Hotspot->create();
+                    $this->request->data['Hotspot']['user_id'] = $this->Auth->user('id');
+                    $this->request->data['Hotspot']['username'] = $username;
+                    $this->request->data['Hotspot']['password'] = $password;
+                    if ($this->Hotspot->save($this->request->data)) {
+                        $this->add_to_radius();
+                        } else {
+                        $this->Session->setFlash(__('The ticket could not be saved. Please, try again.'), 'flash_error');
+                        return $this->redirect(array('action' => 'index'));
+                    }
+
+                }// for
+                $this->Session->setFlash(__('Tickets successfully generated.'), 'flash_success');
+                return $this->redirect(array('action' => 'index'));   
+
+            } else {
+                echo 'no validated';
+
+            }
+        }
+    }
+
     public function add() {
         $packages = $this->Hotspot->Package->find('list');
         $this->set(array('packages' => $packages));
@@ -126,7 +170,7 @@ class HotspotsController extends AppController {
             'username' => $this->request->data['Hotspot']['username'],
             'op' => ':=',
             'attribute' => 'Simultaneous-Use',
-            'value' => 1
+            'value' => $this->request->data['Hotspot']['concurrent'] 
         ));
         $this->Radcheck->save();
 
@@ -224,6 +268,7 @@ class HotspotsController extends AppController {
                            
                 $this->Radusergroup->deleteAll($conditions, FALSE);
                 $this->Radcheck->deleteAll($conditions, FALSE);  
+                $this->Radacct->deleteAll($conditions, FALSE); 
 
                 $this->Hotspot->id =  $id;
                 $this->Hotspot->delete();               
@@ -258,6 +303,7 @@ class HotspotsController extends AppController {
        
             $this->Radusergroup->deleteAll($conditions, FALSE); 
             $this->Radcheck->deleteAll($conditions, FALSE); 
+            $this->Radacct->deleteAll($conditions, FALSE); 
        
        
             $this->Session->setFlash(__('Hotspot ID:'.$id.' has been deleted'), 'flash_success');

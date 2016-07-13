@@ -72,18 +72,23 @@ class RadacctsController extends AppController {
 
 
     function detail($username=null){
-        $options =  array(
-            'fields'     => array( 
+        $check = $this->Radacct->findByUsername($username);
+        if($check){
+            $options =  array(
+                'fields'     => array( 
                                     'time_to_sec(timediff(Radacct.acctstoptime,Radacct.acctstarttime)) as second',
                                     'timediff(Radacct.acctstoptime,Radacct.acctstarttime) as duration',
                                     '(Radacct.acctinputoctets + Radacct.acctoutputoctets) as volume',
                                     'Radacct.acctstarttime',
                                     'Radacct.framedipaddress',
                                 ),
-            'conditions' => array('Radacct.username' => $username),
-        );
+                'conditions' => array('Radacct.username' => $username),
+            );
         $data = $this->Radacct->find('all', $options);
         return $data;
+        } else {
+        return FALSE;
+        }
     }
 
     function timediff($date1=null,$date2=null){

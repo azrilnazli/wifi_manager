@@ -1,6 +1,6 @@
 <div id="pantblhlp1" class="panel panel-info">
     <div class="panel-heading">
-        <h3><span class="fa fa-tag"></span> prepaid1</h3>
+        <h3><span class="fa fa-tag"></span> <?=$hotspot['Hotspot']['username'];?></h3>
     </div>
     <div class="panel-body">
 <?php #debug($hotspot); ?>
@@ -18,11 +18,11 @@
         <dt>Package</dt>
         <dd><?=$hotspot['Package']['title'];?></dd>
         <dt>Upload Speed</dt>
-        <dd><?=$this->Number->toReadableSize($hotspot['Package']['upload']);?></dd>
+        <dd><?=$hotspot['Package']['upload'];?></dd>
         <dt>Download Speed</dt>
-        <dd><?=$this->Number->toReadableSize($hotspot['Package']['download']);?></dd>
+        <dd><?=$hotspot['Package']['download'];?></dd>
         <dt>Concurrent</dt>
-        <dd>1</dd>
+        <dd><?=$hotspot['Hotspot']['concurrent'];?></dd>
         <dt>Idle Timeout</dt>
         <dd>15 minute</dd>
     </dl>
@@ -38,6 +38,7 @@
         }
         $total_time = null;
         $total_volume = null;
+        if($detail):
         Foreach($detail as $k => $data):
             $row[$k]['connect'] = $this->Time->timeAgoInWords($data['Radacct']['acctstarttime']);
             $row[$k]['framedipaddress'] = $data['Radacct']['framedipaddress'];
@@ -65,4 +66,5 @@
         echo $this->Table->tableHeaders( array('Date','IP' ,'Duration' , 'Volume') );
         echo $this->Table->tableCells( $row );
         echo $this->Table->end();
+        endif;
         ?>

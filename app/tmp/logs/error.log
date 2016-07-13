@@ -4857,3 +4857,197 @@ Stack Trace:
 #3 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
 #4 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2016-07-13 15:28:16 Error: Fatal Error (1): Call to undefined function import() in [/var/www/html/wifi_manager/app/Controller/HotspotsController.php, line 72]
+2016-07-13 15:28:16 Error: [FatalErrorException] Call to undefined function import()
+Request URL: /Hotspots/ticket
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/w...', 72)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/w...', 72, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/w...', 72, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-13 15:28:26 Error: Fatal Error (4): syntax error, unexpected '[' in [/var/www/html/wifi_manager/app/Vendor/coupon.php, line 21]
+2016-07-13 15:28:26 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /Hotspots/ticket
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/w...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/w...', 21, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/w...', 21, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-13 15:29:24 Error: Fatal Error (4): syntax error, unexpected '[' in [/var/www/html/wifi_manager/app/Vendor/coupon.php, line 23]
+2016-07-13 15:29:24 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /Hotspots/ticket
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/w...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/w...', 23, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/w...', 23, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-13 16:20:42 Error: Fatal Error (1): Call to a member function set() on a non-object in [/var/www/html/wifi_manager/app/Controller/HotspotsController.php, line 76]
+2016-07-13 16:20:42 Error: [FatalErrorException] Call to a member function set() on a non-object
+Request URL: /Hotspots/ticket
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/w...', 76)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/w...', 76, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/w...', 76, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-13 16:26:45 Error: Fatal Error (4): syntax error, unexpected T_INC, expecting T_VARIABLE or '$' in [/var/www/html/wifi_manager/app/Controller/HotspotsController.php, line 79]
+2016-07-13 16:26:45 Error: [FatalErrorException] syntax error, unexpected T_INC, expecting T_VARIABLE or '$'
+Request URL: /Hotspots/ticket
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/w...', 79)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/w...', 79, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/w...', 79, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-13 16:27:14 Error: Fatal Error (4): syntax error, unexpected T_INC, expecting T_VARIABLE or '$' in [/var/www/html/wifi_manager/app/Controller/HotspotsController.php, line 79]
+2016-07-13 16:27:14 Error: [FatalErrorException] syntax error, unexpected T_INC, expecting T_VARIABLE or '$'
+Request URL: /Hotspots/ticket
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/w...', 79)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/w...', 79, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/w...', 79, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-13 16:36:04 Error: [Exception] DateTime::__construct(): Failed to parse time string (@) at position 0 (@): Unexpected character
+Request URL: /Hotspots/view/9
+Stack Trace:
+#0 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(36): DateTime->__construct('@')
+#1 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(50): secondsToTime(NULL)
+#2 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#3 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#4 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#5 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#6 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#7 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#8 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2016-07-13 16:37:09 Error: [Exception] DateTime::__construct(): Failed to parse time string (@) at position 0 (@): Unexpected character
+Request URL: /Hotspots/view/9
+Stack Trace:
+#0 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(36): DateTime->__construct('@')
+#1 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(50): secondsToTime(NULL)
+#2 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#3 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#4 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#5 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#6 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#7 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#8 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2016-07-13 16:41:24 Error: [NotFoundException] Invalid ticket
+Request URL: /Hotspots/view/9
+Stack Trace:
+#0 [internal function]: HotspotsController->view('9')
+#1 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(HotspotsController), Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#4 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-13 16:42:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'findbyUsername' at line 1
+Request URL: /Hotspots/view/2
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('findbyUsername', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('findbyUsername', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(607): DboSource->fetchAll('findbyUsername', Array, Array)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(827): DboSource->query('findbyUsername', Array, Object(Radacct))
+#5 /var/www/html/wifi_manager/app/Controller/RadacctsController.php(75): Model->__call('findbyUsername', Array)
+#6 /var/www/html/wifi_manager/app/Controller/RadacctsController.php(75): Radacct->findbyUsername('63632751')
+#7 [internal function]: RadacctsController->detail('63632751')
+#8 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RadacctsController), Array)
+#9 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadacctsController), Object(CakeRequest))
+#11 /var/www/html/wifi_manager/lib/Cake/Core/Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#12 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(33): Object->requestAction('/Radaccts/detai...')
+#13 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#14 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#15 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#16 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#17 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#18 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#19 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2016-07-13 16:42:29 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: Failed to parse time string (@) at position 0 (@): Unexpected character
+Request URL: /Hotspots/view/2
+Stack Trace:
+#0 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(36): DateTime->__construct('@')
+#1 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(50): secondsToTime(NULL)
+#2 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#3 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#4 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#5 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#6 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#7 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#8 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2016-07-13 16:43:41 Error: [Exception] DateTime::__construct(): Failed to parse time string (@) at position 0 (@): Unexpected character
+Request URL: /Hotspots/view/2
+Stack Trace:
+#0 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(36): DateTime->__construct('@')
+#1 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(52): secondsToTime(NULL)
+#2 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#3 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#4 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#5 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#6 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#7 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#8 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2016-07-13 16:43:43 Error: [Exception] DateTime::__construct(): Failed to parse time string (@) at position 0 (@): Unexpected character
+Request URL: /Hotspots/view/2
+Stack Trace:
+#0 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(36): DateTime->__construct('@')
+#1 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(52): secondsToTime(NULL)
+#2 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#3 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#4 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#5 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#6 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#7 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#8 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2016-07-13 16:43:59 Error: [Exception] DateTime::__construct() [http://php.net/datetime.--construct]: Failed to parse time string (@) at position 0 (@): Unexpected character
+Request URL: /Hotspots/view/2
+Stack Trace:
+#0 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(37): DateTime->__construct('@')
+#1 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(53): secondsToTime(NULL)
+#2 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#3 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#4 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#5 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#6 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#7 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#8 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2016-07-13 16:44:29 Error: [Exception] DateTime::__construct(): Failed to parse time string (@) at position 0 (@): Unexpected character
+Request URL: /Hotspots/view/2
+Stack Trace:
+#0 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(36): DateTime->__construct('@')
+#1 /var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp(52): secondsToTime(NULL)
+#2 /var/www/html/wifi_manager/lib/Cake/View/View.php(971): include('/var/www/html/w...')
+#3 /var/www/html/wifi_manager/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/w...', Array)
+#4 /var/www/html/wifi_manager/lib/Cake/View/View.php(473): View->_render('/var/www/html/w...')
+#5 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#6 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#7 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HotspotsController), Object(CakeRequest))
+#8 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2016-07-13 16:46:26 Error: Fatal Error (4): syntax error, unexpected ';', expecting ']' in [/var/www/html/wifi_manager/app/View/Themed/SbAdmin/Hotspots/view.ctp, line 25]
+2016-07-13 16:46:26 Error: [FatalErrorException] syntax error, unexpected ';', expecting ']'
+Request URL: /Hotspots/view/2
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/w...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/w...', 25, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/w...', 25, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

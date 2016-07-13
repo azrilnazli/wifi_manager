@@ -53,8 +53,8 @@ class Hotspot extends AppModel {
 
             'alphaNumeric' => array(
                 'rule'     => 'alphaNumeric',
-                'required' => true,
-                'last'      => true,
+                //'required' => true,
+                //'last'      => true,
                 'allowEmpty' => false,
                 'message'  => 'Alphabets and numbers only'
             ),
@@ -67,6 +67,27 @@ class Hotspot extends AppModel {
                 'message' => 'This username has already been taken.'
             )
         ),
+
+      'number_of_tickets' => array(
+
+            'numeric' => array(
+                'rule'     => 'numeric',
+                'allowEmpty' => false,
+                'message'  => 'Numbers only'
+            ),
+        ),
+
+      'concurrent' => array(
+
+            'numeric' => array(
+                'rule'     => 'numeric',
+                'allowEmpty' => false,
+                'message'  => 'Numbers only'
+            ),
+        ),
+
+
+
 
         'password' => array(
             'required' => array(

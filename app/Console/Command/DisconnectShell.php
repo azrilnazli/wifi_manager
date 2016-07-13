@@ -1,8 +1,6 @@
 <?php
 class DisconnectShell extends AppShell {
-    
     public $uses = array('Hotspot');
-
     public function show() {
         $data  = $this->Hotspot->findByDisconnect(1);
         $user = null;
@@ -10,9 +8,10 @@ class DisconnectShell extends AppShell {
         require('/var/www/html/wifi_manager/app/webroot/mikrotik/routeros-api/routeros_api.class.php');
 
         $API = new RouterosAPI();
-        $API->debug = true;
+        //$API->debug = true;
+        $API->debug = FALSE;
         if($user){
-            if ($API->connect('192.168.0.103', 'admin', '')) {
+            if ($API->connect('192.168.10.1', 'admin', '')) {
 
                 $API->write('/ip/hotspot/active/print');
 
@@ -20,7 +19,7 @@ class DisconnectShell extends AppShell {
                 $ARRAY = $API->parseResponse($READ);
 
                 foreach ($ARRAY as $value) {
-                    print_r($value);
+                    //print_r($value);
                     if ($value['user'] == $user) {
                         $id = $value['.id']; 
                         $API->write("/ip/hotspot/active/remove", false);

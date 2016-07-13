@@ -17,6 +17,9 @@ $search_hotspot = '
         <li>
             <a href="/Hotspots/index"><i class="fa fa-list-alt"></i> Manage Tickets</a>
          </li>
+        <li>
+            <a href="/Hotspots/ticket"><i class="fa fa-plus"></i> Generate Ticket</a>
+         </li>
          <li>
             <a href="/Hotspots/add"><i class="fa fa-plus"></i> Create Ticket</a>
          </li>

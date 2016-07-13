@@ -13,7 +13,7 @@
 
 <div id="pantblhlp1" class="panel panel-info">
     <div class="panel-heading">
-        <h4>Edit Current Package</h4>
+        <h4>Create New Package</h4>
     </div>
 
     <?= $form;?>
@@ -33,26 +33,29 @@
 <?php
 
 #$base = 1073741824;
-$base = 1048576; // 10MB
+$base = 1048576; // 1MB
 $options_vol = array(
-        $base*1     => '10 MB' ,
+        $base*100    => '100 MB' ,
+        $base*500    => '500 MB' ,
+        $base*1000    => '1 GB' ,
+        $base*5000    => '5 GB' ,
 );
 
 $volume = $this->Form->input('volume', array(
                                     'type' => 'select',
                                     'options' => $options_vol,
-                                    'label'=> 'Volume Transfer',
+                                    'label'=> 'Daily Volume Transfer',
                                     'default' => $base,
                                     'class' => 'form-control'));
 
 $options = array(
-    '57344'     => '56k' ,
-    '131072'    => '128k' ,
-    '262144'    => '256k' ,
-    '524288'    => '512k' ,
-    '1048576'   => '1mb' ,
-    '5242880'   => '5mb' ,
-    '10485760'  => '10mb' ,
+    '56k'       => '56k' ,
+    '128k'      => '128k' ,
+    '256k'      => '256k' ,
+    '512k'      => '512k' ,
+    '1m'        => '1mb' ,
+    '5m'        => '5mb' ,
+    '10m'       => '10mb' ,
 
 );
 $upload = $this->Form->input('upload', array(

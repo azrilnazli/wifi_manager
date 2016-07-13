@@ -76,8 +76,8 @@ Foreach( $packages as $package ){
             "<center>{$checkbox}</center>",
             $package['Package']['id'],  
             $package['Package']['title'],  
-            ($package['Package']['upload']/1024) . " kbps",  
-            ($package['Package']['download']/1024) ." kbps",
+            strToUpper( $package['Package']['upload'] ),  
+            strToUpper( $package['Package']['download'] ),
 	        $this->Number->toReadableSize($package['Package']['volume']),
             "<center><a class='btn btn-outline btn-primary' href='/Packages/edit/{$package['Package']['id']}'>Edit</a> <a class='btn btn-outline btn-primary' href='/Packages/delete/{$package['Package']['id']}'>Delete</a </center>"
         );

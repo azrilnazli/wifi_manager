@@ -43,7 +43,7 @@ class Package extends AppModel {
 		),
 		'upload' => array(
 			'numeric' => array(
-				'rule' => array('numeric'),
+				'rule' => array('notBlank'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -53,7 +53,7 @@ class Package extends AppModel {
 		),
 		'download' => array(
 			'numeric' => array(
-				'rule' => array('numeric'),
+				'rule' => array('notBlank'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,

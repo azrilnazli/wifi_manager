@@ -5,6 +5,7 @@ CREATE TABLE hotspots (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     user_id INT,
     package_id INT,
+    concurrent INT,
     disconnect INT DEFAULT 0,
     username VARCHAR(50),
     password VARCHAR(255),

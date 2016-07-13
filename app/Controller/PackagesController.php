@@ -90,33 +90,36 @@ class PackagesController extends AppController {
                 $this->Radgroupreply->save();
 
                 # Ascend-Xmit-Rate
-                $this->Radgroupreply->create();
-                $this->Radgroupreply->set(array(
-                            'groupname' => $id,
-                                   'op' => ':=',
-                            'attribute' => 'Ascend-Xmit-Rate',
-                                'value' => $this->request->data['Package']['download'] 
-                            ));
-                $this->Radgroupreply->save();
+                #$this->Radgroupreply->create();
+                #$this->Radgroupreply->set(array(
+                #            'groupname' => $id,
+                #                   'op' => ':=',
+                #            'attribute' => 'Ascend-Xmit-Rate',
+                #            //'attribute' => 'Mikrotik-Recv-Limit',
+                #                'value' => $this->request->data['Package']['download'] 
+                #            ));
+                #$this->Radgroupreply->save();
 
                 # Ascend-Data-Rate
-                $this->Radgroupreply->create();
-                $this->Radgroupreply->set(array(
-                            'groupname' => $id,
-                                   'op' => ':=',
-                            'attribute' => 'Ascend-Data-Rate',
-                                'value' => $this->request->data['Package']['upload'] 
-                            ));
-                $this->Radgroupreply->save();
+                #$this->Radgroupreply->create();
+                #$this->Radgroupreply->set(array(
+                #            'groupname' => $id,
+                #                   'op' => ':=',
+                #            'attribute' => 'Ascend-Data-Rate',
+                #                'value' => $this->request->data['Package']['upload'] 
+                #            ));
+                #$this->Radgroupreply->save();
 
 
                 # Mikrotik Rate Limit
+                $up     =  $this->request->data['Package']['upload']; 
+                $down   =  $this->request->data['Package']['download']; 
                 $this->Radgroupreply->create();
                 $this->Radgroupreply->set(array(
                             'groupname' => $id,
                                    'op' => '=',
                             'attribute' => 'Mikrotik-Rate-Limit',
-                                'value' => '56k/56k'
+                                'value' => "{$up}/{$down}"
                             ));
                 $this->Radgroupreply->save();
 
