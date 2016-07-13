@@ -14,6 +14,7 @@ class RadacctsController extends AppController {
     
     public $theme = 'SbAdmin';
     
+    # system 
     public function system(){}
 
     public function index() {
