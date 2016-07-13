@@ -4,7 +4,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>WIFI Manager</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="/theme/sb-admin/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
