@@ -77,6 +77,24 @@ if($hotspots){
                         )
                 );
 
+        # volume balance
+        #debug($hotspot);
+        $current_usage = $volume;
+        $full_usage = $hotspot['Package']['volume'];
+        $usage = round($current_usage / $full_usage ) * 100; 
+        if($usage < 40) $level = "progress-bar-success";
+        if($usage > 40 && $usage < 50 ) $level = "progress-bar-info";
+        if($usage > 50 && $usage < 70 ) $level = "progress-bar-warning";
+        if($usage > 70 ) $level = "progress-bar-danger";
+        $bar1 = '
+        <div style="width:100px;" class="progress progress-bar-success">
+           <div class="progress-bar '.$level.'" role="progressbar" aria-valuenow="'.$usage.'" aria-valuemin="0" aria-valuemax="100" style="width:'.$usage.'%">
+                    '.(100-$usage).'% 
+           </div>
+       </div>
+            ';
+
+        # time balance
         $begin= strtotime($hotspot['Hotspot']['created']);
         $now = time();
         $end = strtotime($hotspot['Hotspot']['expired']);
@@ -87,8 +105,9 @@ if($hotspots){
         if($percent > 50 && $percent < 70 ) $level = "progress-bar-warning";
         if($percent > 70 ) $level = "progress-bar-danger";
 
-        $bar = '
-        <div style="width:250px;" class="progress progress-bar-success">
+        #$this->Time->timeAgoInWords($hotspot['Hotspot']['expired']),  
+        $bar2 = '
+        <div style="width:100px;" class="progress progress-bar-success">
            <div class="progress-bar '.$level.'" role="progressbar" aria-valuenow="'.$percent.'" aria-valuemin="0" aria-valuemax="100" style="width:'.$percent.'%">
                     '.(100-$percent).'% 
            </div>
@@ -99,10 +118,11 @@ if($hotspots){
             $hotspot['Hotspot']['id'],  
             $hotspot['Hotspot']['username'],  
             $hotspot['Package']['title'],  
-            $this->Number->toReadableSize($volume),
+            #$this->Number->toReadableSize($volume),
             #$this->Time->timeAgoInWords($hotspot['Hotspot']['expired']),  
             #$this->Time->timeAgoInWords($hotspot['Hotspot']['created']),  
-            $bar,
+            $bar1,
+            $bar2,
             "<center>".$this->requestAction('/Radaccts/status/' . $hotspot['Hotspot']['username'])."</center>",
             "<center><a href='/Hotspots/disconnect/{$hotspot['Hotspot']['id']}'>".$this->requestAction('/Radaccts/disconnect/' . $hotspot['Hotspot']['username'])."</a></center>",
             "<center><a class='btn btn-outline btn-success' href='/Hotspots/view/{$hotspot['Hotspot']['id']}'><span class='glyphicon glyphicon-search'></span></a> <a class='btn btn-outline btn-primary' href='/Hotspots/edit/{$hotspot['Hotspot']['id']}'><span class='glyphicon glyphicon-edit'></span></a> <a class='btn btn-outline btn-danger' href='/Hotspots/delete/{$hotspot['Hotspot']['id']}'><span class='glyphicon glyphicon-trash'></span></a></center>"
@@ -116,7 +136,7 @@ if($hotspots){
         #$sort_expired = $this->Paginator->sort('expired',  '<span class="glyphicon glyphicon-sort"></span> Expired',array('escape' => FALSE));
         #$sort_created = $this->Paginator->sort('created',  '<span class="glyphicon glyphicon-sort"></span> Created',array('escape' => FALSE));
 
-        echo $this->Table->tableHeaders( array('', $sort_id, $sort_username, $sort_package,'Volume','Balance','Status','Disconnect',null ) );
+        echo $this->Table->tableHeaders( array('', $sort_id, $sort_username, $sort_package,'Volume','Time Balance','Status','Disconnect',null ) );
         echo $this->Table->tableCells( $data );
         echo $this->Table->end();
     } // if($data)

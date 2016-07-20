@@ -30,7 +30,7 @@ class HotspotsController extends AppController {
         }
         $this->Hotspot->recursive = 0;
         $this->paginate = array(
-            'fields' => array('Hotspot.id', 'Package.title', 'Hotspot.username','Hotspot.expired', 'Hotspot.created'),
+            'fields' => array('Hotspot.id', 'Package.title','Package.volume', 'Hotspot.username','Hotspot.expired', 'Hotspot.created'),
             'limit'  => 20,
             'order'  => array( 'id' => 'desc' ),
                              
