@@ -18,6 +18,9 @@
                             <?= $this->Element('/nav/sidebar/nmsmonitor');?>
                         </li>
                         <li>
+                            <?= $this->Element('/nav/sidebar/snmpmrtg');?>
+                        </li>
+                        <li>
                             <?= $this->Element('/nav/sidebar/package');?>
                         </li>
                         <li>
