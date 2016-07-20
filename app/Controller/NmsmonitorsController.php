@@ -136,7 +136,7 @@ class NmsmonitorsController extends AppController {
 		if (!$this->Nmsmonitor->exists()) {
 			throw new NotFoundException(__('Invalid nmsmonitor'));
 		}
-		$this->request->allowMethod('post', 'delete');
+		#$this->request->allowMethod('post', 'delete');
 		if ($this->Nmsmonitor->delete()) {
             $this->Session->setFlash(__('The devices has been deleted'), 'flash_success');
             return $this->redirect(array('action' => 'index'));
