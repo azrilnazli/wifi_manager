@@ -81,11 +81,20 @@ if($hotspots){
         #debug($hotspot);
         $current_usage = $volume;
         $full_usage = $hotspot['Package']['volume'];
-        $usage = round($current_usage / $full_usage ) * 100; 
+        $usage = ( $full_usage - $current_usage ) / $full_usage ;             
+        $usage = round($usage * 100); 
         if($usage < 40) $level = "progress-bar-success";
         if($usage > 40 && $usage < 50 ) $level = "progress-bar-info";
         if($usage > 50 && $usage < 70 ) $level = "progress-bar-warning";
         if($usage > 70 ) $level = "progress-bar-danger";
+        $bar1 = '
+        <div style="width:100px;" class="progress progress-bar-success">
+           <div class="progress-bar '.$level.'" role="progressbar" aria-valuenow="'.$usage.'" aria-valuemin="0" aria-valuemax="100" style="width:'.$usage.'%">
+                    '.(100-$usage).'% 
+           </div>
+       </div>
+
+
         $bar1 = '
         <div style="width:100px;" class="progress progress-bar-success">
            <div class="progress-bar '.$level.'" role="progressbar" aria-valuenow="'.$usage.'" aria-valuemin="0" aria-valuemax="100" style="width:'.$usage.'%">
