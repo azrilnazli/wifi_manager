@@ -13,7 +13,7 @@
 
 <div id="pantblhlp1" class="panel panel-info">
     <div class="panel-heading">
-    <h4>Edit current user</h4>
+    <h4><span class="glyphicon glyphicon-edit"></span> Edit current user</h4>
     </div>
 <!-- app/View/Users/add.ctp -->
 
@@ -51,9 +51,9 @@ echo $this->Form->input('role', array(
 
 
 <div class="panel-footer">
-    <a class="btn btn-default" href="/Users/index">Back</a>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</div>
+    <a class="btn btn-default" href="/Users/index"><span class="glyphicon glyphicon-hand-left"></span> Back</a>
+    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-save"></span> Save</button>
+</div> 
 <?= $this->Form->end(); ?>
 </div>
 <!-- /.panel -->

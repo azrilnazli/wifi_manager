@@ -13,7 +13,7 @@
 
 <div id="pantblhlp1" class="panel panel-info">
     <div class="panel-heading">
-        <h4>Create New Ticket</h4>
+        <h4><span class="glyphicon glyphicon-floppy-disk"></span> Create New Ticket</h4>
     </div>
 
 
@@ -88,8 +88,8 @@ $expired = $this->Form->input(
 
 
 <div class="panel-footer">
-    <a class="btn btn-default" href="/Hotspots/index">Back</a>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <a class="btn btn-default" href="/Hotspots/index"><span class="glyphicon glyphicon-hand-left"></span> Back</a>
+    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-save"></span> Save</button>
 </div>
 <?= $this->Form->end(); ?>
 </div>

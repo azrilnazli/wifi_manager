@@ -17,12 +17,13 @@
         <dd><?=$this->Number->toReadableSize($package['Package']['volume']);?></dd>
         <dt>Created On</dt>
         <dd><?=$package['Package']['created'];?></dd>
-        <dt>Created Byd</dt>
+        <dt>Created By</dt>
         <dd><?=$package['User']['username'];?></dd>
     </dl>
     </div>
 <div class="panel-footer">
-    <a class="btn btn-default" href="/Packages/index">Back</a>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</div>
+    <a class="btn btn-default" href="/Packages/index"><span class="glyphicon glyphicon-hand-left"></span> Back</a>
+    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-save"></span> Save</button>
+</div> 
+
 </div>

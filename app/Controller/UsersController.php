@@ -29,7 +29,7 @@ class UsersController extends AppController {
 
     public function index() {
         if ($this->request->is('post')) {
-            debug($this->data);
+           # debug($this->data);
         }
         $this->User->recursive = 0;
         $this->paginate = array(
@@ -71,6 +71,15 @@ class UsersController extends AppController {
         $this->set('user', $this->User->findById($id));
     }
 
+    public function profile(){
+        $this->User->id = $this->Auth->user('id');
+        if (!$this->User->exists()) {
+            throw new NotFoundException(__('Invalid user'));
+        }
+        $this->set('user', $this->User->findById(  $this->Auth->user('id') ));
+        $this->render('view');
+    }
+
    public function add() {
         if ($this->request->is('post')) {
             $this->User->create();
@@ -95,6 +104,26 @@ class UsersController extends AppController {
         }
     }
 
+
+    public function settings() {
+        $this->User->id = $this->Auth->user('id');
+        if (!$this->User->exists()) {
+            throw new NotFoundException(__('Invalid user'));
+        }
+        if ($this->request->is('post') || $this->request->is('put')) {
+            if ($this->User->save($this->request->data)) {
+                $this->Session->setFlash(__('The user has been saved'), 'flash_success');
+                return $this->redirect(array('action' => 'index'));
+            }
+            $this->Flash->error(
+                __('The user could not be saved. Please, try again.')
+            );
+        } else {
+            $this->request->data = $this->User->findById( $this->Auth->user('id') );
+            unset($this->request->data['User']['pwd']);
+        }
+        $this->render('edit');
+    }
 
     public function edit($id = null) {
         $this->User->id = $id;
