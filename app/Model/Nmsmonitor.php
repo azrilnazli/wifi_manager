@@ -21,6 +21,18 @@ class Nmsmonitor extends AppModel {
  */
 	public $displayField = 'device';
 
+    public $validate = array(
+        'deviceip' => array(
+            'ip' => array(
+                'rule' => array('ip'),
+                'message' => 'Please provide correct IP Address',
+                'allowEmpty' => false,
+                'required' => true,
+                'last' => false, // Stop validation after this rule
+                'on' => 'create', // Limit validation to 'create' or 'update' operations
+            ),
+        ),
+    );
 
 	// The Associations below have been created with all possible keys, those that are not needed can be removed
 
