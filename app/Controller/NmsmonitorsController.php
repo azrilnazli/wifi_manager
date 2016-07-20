@@ -81,6 +81,7 @@ class NmsmonitorsController extends AppController {
 	public function add() {
 		if ($this->request->is('post')) {
 			$this->Nmsmonitor->create();
+            $this->request->data['Nmsmonitor']['user_id'] = $this->Auth->user('id');
 			if ($this->Nmsmonitor->save($this->request->data)) {
                 $this->Session->setFlash(__('The device has been saved'), 'flash_success');
 				return $this->redirect(array('action' => 'index'));
@@ -105,6 +106,7 @@ class NmsmonitorsController extends AppController {
 			throw new NotFoundException(__('Invalid nmsmonitor'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
+            $this->request->data['Nmsmonitor']['user_id'] = $this->Auth->user('id');
 			if ($this->Nmsmonitor->save($this->request->data)) {
                 $this->Session->setFlash(__('The device has been saved'), 'flash_success');
                 return $this->redirect(array('action' => 'index'));
