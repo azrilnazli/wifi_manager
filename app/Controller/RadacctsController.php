@@ -10,7 +10,7 @@ class RadacctsController extends AppController {
  *
  * @var mixed
  */
-	public $scaffold;
+	#public $scaffold;
     
     public $theme = 'SbAdmin';
     
@@ -33,6 +33,13 @@ class RadacctsController extends AppController {
                 'order'  => array( 'Radacct.radacctid' => 'desc' ),
             );
         $this->set( 'radaccts', $this->paginate() );
+    }
+
+    function balance(){
+        $begin= strtotime('-2 weeks');
+        $now = time();
+        $end = strtotime('+2 weeks');
+        $percent = ($now-$begin) / ($end-$begin) * 100;
     }
 
     function volume($username=null){

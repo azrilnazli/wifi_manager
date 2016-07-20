@@ -10,6 +10,8 @@ CREATE TABLE `nmsmonitor` (
   `deviceregister` varchar(100) NOT NULL,
   `devicestatus` varchar(100) NOT NULL,
   `deviceregby` varchar(100) NOT NULL,
+  `created` DATETIME NOT NULL,
+    
   UNIQUE KEY `id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;

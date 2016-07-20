@@ -16,7 +16,6 @@
     </dl>
     </div>
 <div class="panel-footer">
-    <a class="btn btn-default" href="/Nas/index">Back</a>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <a class="btn btn-default" href="/Nas/index"><span class="glyphicon glyphicon-hand-left"></span> Back</a>
 </div>
 </div>

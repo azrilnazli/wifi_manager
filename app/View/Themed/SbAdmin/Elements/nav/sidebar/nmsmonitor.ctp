@@ -12,7 +12,7 @@ $search_nmsmonitor = '
 </form>
     ';
 ?>
-<a href="#"><i class="fa fa-gears"></i> Nms Monitor<span class="fa arrow"></span></a>
+<a href="#"><i class="fa fa-gears"></i> Monitoring<span class="fa arrow"></span></a>
     <ul class="nav nav-second-level">
         <li>
             <a href="/Nmsmonitors/index"><i class="fa fa-list-alt"></i> Manage Devices</a>

@@ -8,18 +8,24 @@
         <dt>Title</dt>
         <dd><?=$nmsmonitor['Nmsmonitor']['device'];?></dd>
         <dt>Description</dt>
-        <dd><?=$nmsmonitor['Nmsmonitor']['devicedecr'];?></dd>
+        <dd><?=$nmsmonitor['Nmsmonitor']['devicedescr'];?></dd>
         <dt>IP Address</dt>
         <dd><?=$nmsmonitor['Nmsmonitor']['deviceip'];?></dd>
         <dt>Status</dt>
         <dd><?=$nmsmonitor['Nmsmonitor']['devicestatus'];?></dd>
         <dt>Created By</dt>
         <dd><?=$nmsmonitor['User']['username'];?></dd>
+        <dt>Created On</dt>
+        <dd><?=$nmsmonitor['Nmsmonitor']['created'];?></dd>
     </dl>
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="http://nas.azbyte.com:82/mymrtg/"></iframe>
+</div>
+~     
     </div>
 <div class="panel-footer">
     <a class="btn btn-default" href="/Nmsmonitors/index"><span class="glyphicon glyphicon-hand-left"></span> Back</a>
-    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-save"></span> Save</button>
 </div> 
 
 </div>

@@ -106,6 +106,8 @@ class NmsmonitorsController extends AppController {
 			throw new NotFoundException(__('Invalid nmsmonitor'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
+            #debug($this->request->data);
+            #die();
             $this->request->data['Nmsmonitor']['user_id'] = $this->Auth->user('id');
 			if ($this->Nmsmonitor->save($this->request->data)) {
                 $this->Session->setFlash(__('The device has been saved'), 'flash_success');

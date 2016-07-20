@@ -9,14 +9,28 @@
                                             //'between' => '<div class="col-lg-6">',
                                             //'after' => '</div>',
                                             'error' => array('attributes' => array('wrap' => 'div', 'class' => 'alert alert-warning')),
-))); ?>
+)));
+$options = array(
+        'active' => 'active',
+        'suspended' => 'suspended',
+        'terminated' => 'terminated',
+);
+
+$status = $this->Form->input('devicestatus', array(
+                                    'type' => 'select',
+                                    'options' => $options,
+                                    'label'=> 'Device Status',
+                                    'default' => 'active',
+                                    'class' => 'form-control'));
+ ?>
 
 <div id="pantblhlp1" class="panel panel-info">
     <div class="panel-heading">
-        <h4><span class="glyphicon glyphicon-floppy-disk"></span> Edit Current Device</h4>
+        <h4><span class="glyphicon glyphicon-edit"></span> Edit Current Device</h4>
     </div>
 
     <?= $form;?>
+	<?= $this->Form->input('id') ?>
     <div class="panel-body">
     <div class="row">
         <div class="col-lg-6">
@@ -35,18 +49,8 @@
                 </div>
 
                  <div class="form-group">
-                    <label>Status</label>
-                     <?= $this->Form->input('devicestatus', array('label'=> FALSE, 'class' => 'form-control')); ?>
+                    <?= $status;?>
                 </div>
-
-               <div class="form-group">
-                    <label>Register</label>
-                     <?= $this->Form->input('deviceregister', array('label'=> FALSE, 'class' => 'form-control')); ?>
-                </div>
-
-
-
-
 
         </div> <!-- row -->
     </div> <!-- heading -->

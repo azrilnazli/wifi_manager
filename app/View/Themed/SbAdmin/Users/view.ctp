@@ -15,6 +15,5 @@
     </div>
 <div class="panel-footer">
     <a class="btn btn-default" href="/Users/index"><span class="glyphicon glyphicon-hand-left"></span> Back</a>
-    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-save"></span> Save</button>
 </div> 
 </div>

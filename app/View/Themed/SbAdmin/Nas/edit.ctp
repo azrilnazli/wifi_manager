@@ -17,6 +17,7 @@
     </div>
 
     <?= $form;?>
+    <?= $this->Form->input('id') ?>
     <div class="panel-body">
     <div class="row">
         <div class="col-lg-6">

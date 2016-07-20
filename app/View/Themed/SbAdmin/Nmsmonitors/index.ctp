@@ -87,7 +87,7 @@ Foreach( $nmsmonitors as $nmsmonitor ){
 $sort_id            = $this->Paginator->sort('id','<span class="glyphicon glyphicon-sort"></span> ID',array('escape' => FALSE) );
 $sort_device        = $this->Paginator->sort('device', '<span class="glyphicon glyphicon-sort"></span> Device',array('escape' => FALSE));
 $sort_deviceip      = $this->Paginator->sort('deviceip', '<span class="glyphicon glyphicon-sort"></span> IP Address',array('escape' => FALSE));
-$sort_devicestatus  = $this->Paginator->sort('devicestatus', '<span class="glyphicon glyphicon-sort"></span> Status Address',array('escape' => FALSE));
+$sort_devicestatus  = $this->Paginator->sort('devicestatus', '<span class="glyphicon glyphicon-sort"></span> Status',array('escape' => FALSE));
 
 echo $this->Table->tableHeaders( array('', $sort_id, $sort_device, $sort_deviceip, $sort_devicestatus, null ) );
 echo $this->Table->tableCells( $data );
