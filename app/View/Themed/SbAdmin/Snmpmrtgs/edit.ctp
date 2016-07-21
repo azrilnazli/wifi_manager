@@ -47,11 +47,11 @@ $status = $this->Form->input('snmpstatus', array(
                  <div class="form-group">
                     <?= $status;?>
                 </div>
+              <?php /*
                 <div class="form-group">
                     <label>Login by</label>
                      <?= $this->Form->input('snmp_loginby', array( 'label'=> FALSE, 'class' => 'form-control')); ?>
                 </div>
-              <?php /*
                 <div class="form-group">
                     <label>Discover</label>
                      <?= $this->Form->input('snmp_discover', array( 'label'=> FALSE, 'class' => 'form-control')); ?>

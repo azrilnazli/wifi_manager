@@ -78,6 +78,7 @@ Foreach( $nmsmonitors as $nmsmonitor ){
             $nmsmonitor['Nmsmonitor']['device'],  
             $nmsmonitor['Nmsmonitor']['deviceip'],  
             $nmsmonitor['Nmsmonitor']['devicestatus'],  
+            $nmsmonitor['User']['username'],  
             "<center><a class='btn btn-outline btn-success' href='/Nmsmonitors/view/{$nmsmonitor['Nmsmonitor']['id']}'><span class='glyphicon glyphicon-search'></span></a> <a class='btn btn-outline btn-primary' href='/Nmsmonitors/edit/{$nmsmonitor['Nmsmonitor']['id']}'><span class='glyphicon glyphicon-edit'></span></a> <a class='btn btn-outline btn-danger' href='/Nmsmonitors/delete/{$nmsmonitor['Nmsmonitor']['id']}'><span class='glyphicon glyphicon-trash'></span></a></center>"
             #"<center><a class='btn btn-outline btn-primary' href='/Nmsmonitors/edit/{$nmsmonitor['Nmsmonitor']['id']}'>Edit</a> <a class='btn btn-outline btn-primary' href='/Nmsmonitors/delete/{$nmsmonitor['Nmsmonitor']['id']}'>Delete</a </center>"
         );
@@ -89,7 +90,7 @@ $sort_device        = $this->Paginator->sort('device', '<span class="glyphicon g
 $sort_deviceip      = $this->Paginator->sort('deviceip', '<span class="glyphicon glyphicon-sort"></span> IP Address',array('escape' => FALSE));
 $sort_devicestatus  = $this->Paginator->sort('devicestatus', '<span class="glyphicon glyphicon-sort"></span> Status',array('escape' => FALSE));
 
-echo $this->Table->tableHeaders( array('', $sort_id, $sort_device, $sort_deviceip, $sort_devicestatus, null ) );
+echo $this->Table->tableHeaders( array('', $sort_id, $sort_device, $sort_deviceip, $sort_devicestatus,'Created by', null ) );
 echo $this->Table->tableCells( $data );
 #echo $this->Table->tableCells( array(
 #            array( '1', 'John', 'Doh', '1970-01-01'),

@@ -18,6 +18,10 @@ $search_nmsmonitor = '
             <a href="/Nmsmonitors/index"><i class="fa fa-list-alt"></i> Manage Devices</a>
          </li>
          <li>
+            <a href="/Snmpmrtgs/index"><i class="fa fa-list-alt"></i> Manage MRTG</a>
+         </li>
+
+         <li>
             <a href="/Nmsmonitors/add"><i class="fa fa-plus"></i> Create Device</a>
          </li>
          <li class="sidebar-search">

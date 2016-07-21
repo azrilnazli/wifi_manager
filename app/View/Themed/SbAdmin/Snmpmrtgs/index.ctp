@@ -23,8 +23,10 @@ echo $search_bar ='
 <form action ="/Snmpmrtgs/mass_delete" method="POST">
 <?php
 
-$create  = '<span><a class="btn btn-primary" href="/Snmpmrtgs/add"><span class="glyphicon glyphicon-plus-sign"></span> Create</a></span>';;
-$delete  = '<span><button type="submit" class="btn btn-danger" onclick="if (confirm(&quot;Are you sure to delete these snmpmrtgs ?&quot;)) { document.post_57624a6f587b2226536133.submit(); } event.returnValue = false; return false;"><span class="glyphicon glyphicon-trash"></span> Delete</button></span>';;
+$create = null;
+$delete = null;
+#$create  = '<span><a class="btn btn-primary" href="/Snmpmrtgs/add"><span class="glyphicon glyphicon-plus-sign"></span> Create</a></span>';;
+#$delete  = '<span><button type="submit" class="btn btn-danger" onclick="if (confirm(&quot;Are you sure to delete these snmpmrtgs ?&quot;)) { document.post_57624a6f587b2226536133.submit(); } event.returnValue = false; return false;"><span class="glyphicon glyphicon-trash"></span> Delete</button></span>';;
 $paginator = $this->Element('paginator');
 $footer ="<table style='width:100%;height:20px'  border='0'><tr><td>{$delete}&nbsp;{$create}</td><td><span class='pull-right'>{$paginator}</span></td></tr></table>";
 
@@ -79,7 +81,9 @@ Foreach( $snmpmrtgs as $snmpmrtg ){
             $snmpmrtg['Nmsmonitor']['device'],  
             $snmpmrtg['Snmpmrtg']['snmp_ip'],  
             $snmpmrtg['Snmpmrtg']['snmp_status'],  
-            "<center><a class='btn btn-outline btn-success' href='/Snmpmrtgs/view/{$snmpmrtg['Snmpmrtg']['id']}'><span class='glyphicon glyphicon-search'></span></a> <a class='btn btn-outline btn-primary' href='/Snmpmrtgs/edit/{$snmpmrtg['Snmpmrtg']['id']}'><span class='glyphicon glyphicon-edit'></span></a> <a class='btn btn-outline btn-danger' href='/Snmpmrtgs/delete/{$snmpmrtg['Snmpmrtg']['id']}'><span class='glyphicon glyphicon-trash'></span></a></center>"
+            $snmpmrtg['User']['username'],  
+            #"<center><a class='btn btn-outline btn-success' href='/Snmpmrtgs/view/{$snmpmrtg['Snmpmrtg']['id']}'><span class='glyphicon glyphicon-search'></span></a> <a class='btn btn-outline btn-primary' href='/Snmpmrtgs/edit/{$snmpmrtg['Snmpmrtg']['id']}'><span class='glyphicon glyphicon-edit'></span></a> <a class='btn btn-outline btn-danger' href='/Snmpmrtgs/delete/{$snmpmrtg['Snmpmrtg']['id']}'><span class='glyphicon glyphicon-trash'></span></a></center>"
+            "<center><a class='btn btn-outline btn-success' href='/Snmpmrtgs/view/{$snmpmrtg['Snmpmrtg']['id']}'><span class='glyphicon glyphicon-search'></span></a> <a class='btn btn-outline btn-primary' href='/Snmpmrtgs/edit/{$snmpmrtg['Snmpmrtg']['id']}'><span class='glyphicon glyphicon-edit'></span></a></center>"
             #"<center><a class='btn btn-outline btn-primary' href='/Snmpmrtgs/edit/{$snmpmrtg['Snmpmrtg']['id']}'>Edit</a> <a class='btn btn-outline btn-primary' href='/Snmpmrtgs/delete/{$snmpmrtg['Snmpmrtg']['id']}'>Delete</a </center>"
         );
 }
@@ -90,7 +94,7 @@ $sort_device        = $this->Paginator->sort('device', '<span class="glyphicon g
 $sort_deviceip      = $this->Paginator->sort('deviceip', '<span class="glyphicon glyphicon-sort"></span> IP Address',array('escape' => FALSE));
 $sort_devicestatus  = $this->Paginator->sort('devicestatus', '<span class="glyphicon glyphicon-sort"></span> Status',array('escape' => FALSE));
 
-echo $this->Table->tableHeaders( array('', $sort_id, $sort_device, $sort_deviceip, $sort_devicestatus, null ) );
+echo $this->Table->tableHeaders( array('', $sort_id, $sort_device, $sort_deviceip, $sort_devicestatus,'Created by',  null ) );
 echo $this->Table->tableCells( $data );
 #echo $this->Table->tableCells( array(
 #            array( '1', 'John', 'Doh', '1970-01-01'),
