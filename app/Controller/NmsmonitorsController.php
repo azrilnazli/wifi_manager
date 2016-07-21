@@ -122,7 +122,8 @@ class NmsmonitorsController extends AppController {
             $this->request->data['Nmsmonitor']['user_id'] = $this->Auth->user('id');
 			if ($this->Nmsmonitor->save($this->request->data)) {
 
-                $this->Nmsmonitor->Snmpmrtg->read(null,  $id) ;
+                $mrtg = $this->Nmsmonitor->read(null,  $id) ;
+                $this->Nmsmonitor->Snmpmrtg->read(null,  $mrtg['Snmpmrtg']['id'] ) ;
                 $this->Nmsmonitor->Snmpmrtg->set(array(
                     'user_id'  =>  $this->Auth->user('id'),
                     'snmp_ip'        =>  $this->request->data['Nmsmonitor']['deviceip'] ,
