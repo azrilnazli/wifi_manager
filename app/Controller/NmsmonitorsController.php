@@ -83,6 +83,17 @@ class NmsmonitorsController extends AppController {
 			$this->Nmsmonitor->create();
             $this->request->data['Nmsmonitor']['user_id'] = $this->Auth->user('id');
 			if ($this->Nmsmonitor->save($this->request->data)) {
+
+                # create a record in Snmpmrtg Table
+                $this->Nmsmonitor->Snmpmrtg->create();
+                $this->Nmsmonitor->Snmpmrtg->set(array(
+                    'user_id'  =>  $this->Auth->user('id'),
+                    'nmsmonitor_id'  =>  $this->Nmsmonitor->id,
+                    'snmp_ip'        =>  $this->request->data['Nmsmonitor']['deviceip'] ,
+                    'snmp_status'    => $this->request->data['Nmsmonitor']['devicestatus'],
+                    ));
+                $this->Nmsmonitor->Snmpmrtg->save();
+
                 $this->Session->setFlash(__('The device has been saved'), 'flash_success');
 				return $this->redirect(array('action' => 'index'));
 			} else {
@@ -110,6 +121,15 @@ class NmsmonitorsController extends AppController {
             #die();
             $this->request->data['Nmsmonitor']['user_id'] = $this->Auth->user('id');
 			if ($this->Nmsmonitor->save($this->request->data)) {
+
+                $this->Nmsmonitor->Snmpmrtg->read(null,  $id) ;
+                $this->Nmsmonitor->Snmpmrtg->set(array(
+                    'user_id'  =>  $this->Auth->user('id'),
+                    'snmp_ip'        =>  $this->request->data['Nmsmonitor']['deviceip'] ,
+                    'snmp_status'    => $this->request->data['Nmsmonitor']['devicestatus'],
+                    ));
+                $this->Nmsmonitor->Snmpmrtg->save();
+                
                 $this->Session->setFlash(__('The device has been saved'), 'flash_success');
                 return $this->redirect(array('action' => 'index'));
 			} else {
@@ -137,7 +157,7 @@ class NmsmonitorsController extends AppController {
 			throw new NotFoundException(__('Invalid nmsmonitor'));
 		}
 		#$this->request->allowMethod('post', 'delete');
-		if ($this->Nmsmonitor->delete()) {
+		if ($this->Nmsmonitor->delete($id,TRUE)) {
             $this->Session->setFlash(__('The devices has been deleted'), 'flash_success');
             return $this->redirect(array('action' => 'index'));
 		} else {
@@ -153,7 +173,7 @@ class NmsmonitorsController extends AppController {
             if(!empty($id)){
 
                 $this->Nmsmonitor->id = $id;
-                $this->Nmsmonitor->delete();
+                $this->Nmsmonitor->delete($id, TRUE);
             }
         }
         $this->Session->setFlash(__('The devices has been deleted'), 'flash_success');

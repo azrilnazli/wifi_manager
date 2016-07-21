@@ -53,6 +53,14 @@ class Snmpmrtg extends AppModel {
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
-		)
+		),
+         'Nmsmonitor' => array(
+            'className' => 'Nmsmonitor',
+            'foreignKey' => 'nmsmonitor_id',
+            'conditions' => '',
+            'fields' => '',
+            'order' => ''
+        )
+
 	);
 }

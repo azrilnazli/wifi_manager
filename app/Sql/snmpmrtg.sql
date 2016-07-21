@@ -4,6 +4,7 @@ DROP TABLE IF EXISTS `snmpmrtg`;
 CREATE TABLE `snmpmrtg` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
+  `nmsmonitor_id` int(11) NOT NULL,
   `snmp_ip` varchar(50) DEFAULT NULL,
   `snmp_commstring` varchar(50) DEFAULT NULL,
   `snmp_status` varchar(10) DEFAULT NULL,

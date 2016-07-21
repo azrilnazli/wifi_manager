@@ -32,7 +32,7 @@ class SnmpmrtgsController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->Snmpmrtg->recursive = 0;
+		$this->Snmpmrtg->recursive = 1;
 		$this->set('snmpmrtgs', $this->Paginator->paginate());
 	}
 

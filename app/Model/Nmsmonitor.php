@@ -48,6 +48,16 @@ class Nmsmonitor extends AppModel {
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
-		)
+		),
 	);
+   public $hasOne = array(
+        'Snmpmrtg' => array(
+            'className' => 'Snmpmrtg',
+            'foreignKey' => 'nmsmonitor_id',
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'dependent'=> true,
+        ),
+    );
 }

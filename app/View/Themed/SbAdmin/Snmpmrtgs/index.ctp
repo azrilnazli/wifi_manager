@@ -47,6 +47,7 @@ echo $this->Table->create(
 #debug($users);
 if($snmpmrtgs){
 Foreach( $snmpmrtgs as $snmpmrtg ){
+//debug($snmpmrtg);
 
     $checkbox = $this->Form->checkbox('checkList.', 
                                         array( 
@@ -75,9 +76,9 @@ Foreach( $snmpmrtgs as $snmpmrtg ){
     $data[] = array( 
             "<center>{$checkbox}</center>",
             $snmpmrtg['Snmpmrtg']['id'],  
+            $snmpmrtg['Nmsmonitor']['device'],  
             $snmpmrtg['Snmpmrtg']['snmp_ip'],  
             $snmpmrtg['Snmpmrtg']['snmp_status'],  
-            $snmpmrtg['Snmpmrtg']['snmp_loginby'],  
             "<center><a class='btn btn-outline btn-success' href='/Snmpmrtgs/view/{$snmpmrtg['Snmpmrtg']['id']}'><span class='glyphicon glyphicon-search'></span></a> <a class='btn btn-outline btn-primary' href='/Snmpmrtgs/edit/{$snmpmrtg['Snmpmrtg']['id']}'><span class='glyphicon glyphicon-edit'></span></a> <a class='btn btn-outline btn-danger' href='/Snmpmrtgs/delete/{$snmpmrtg['Snmpmrtg']['id']}'><span class='glyphicon glyphicon-trash'></span></a></center>"
             #"<center><a class='btn btn-outline btn-primary' href='/Snmpmrtgs/edit/{$snmpmrtg['Snmpmrtg']['id']}'>Edit</a> <a class='btn btn-outline btn-primary' href='/Snmpmrtgs/delete/{$snmpmrtg['Snmpmrtg']['id']}'>Delete</a </center>"
         );

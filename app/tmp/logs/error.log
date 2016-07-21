@@ -5643,3 +5643,40 @@ Stack Trace:
 #3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2016-07-21 21:53:47 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/html/wifi_manager/app/Controller/NmsmonitorsController.php, line 90]
+2016-07-21 21:53:47 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /Nmsmonitors/index
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/w...', 90)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/w...', 90, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/w...', 90, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-21 21:54:11 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Nmsmonitor'
+Request URL: /Nmsmonitors/index
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Nmsmoni...', Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Nmsmoni...', Array, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `Nmsmoni...', false)
+#4 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Nmsmonitor), Array)
+#5 /var/www/html/wifi_manager/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/wifi_manager/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/wifi_manager/app/Controller/NmsmonitorsController.php(36): PaginatorComponent->paginate()
+#8 [internal function]: NmsmonitorsController->index()
+#9 /var/www/html/wifi_manager/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(NmsmonitorsController), Array)
+#10 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/html/wifi_manager/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(NmsmonitorsController), Object(CakeRequest))
+#12 /var/www/html/wifi_manager/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-07-21 21:54:47 Error: Fatal Error (1): Call to a member function create() on a non-object in [/var/www/html/wifi_manager/app/Controller/NmsmonitorsController.php, line 88]
+2016-07-21 21:54:47 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /Nmsmonitors/add
+Stack Trace:
+#0 /var/www/html/wifi_manager/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/w...', 88)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/w...', 88, Array)
+#2 /var/www/html/wifi_manager/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/w...', 88, Array)
+#3 /var/www/html/wifi_manager/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
