@@ -89,8 +89,6 @@ class NmsmonitorsController extends AppController {
                 $this->Nmsmonitor->Snmpmrtg->set(array(
                     'user_id'  =>  $this->Auth->user('id'),
                     'nmsmonitor_id'  =>  $this->Nmsmonitor->id,
-                    'snmp_ip'        =>  $this->request->data['Nmsmonitor']['deviceip'] ,
-                    'snmp_status'    => $this->request->data['Nmsmonitor']['devicestatus'],
                     ));
                 $this->Nmsmonitor->Snmpmrtg->save();
 
@@ -122,14 +120,14 @@ class NmsmonitorsController extends AppController {
             $this->request->data['Nmsmonitor']['user_id'] = $this->Auth->user('id');
 			if ($this->Nmsmonitor->save($this->request->data)) {
 
-                $mrtg = $this->Nmsmonitor->read(null,  $id) ;
-                $this->Nmsmonitor->Snmpmrtg->read(null,  $mrtg['Snmpmrtg']['id'] ) ;
-                $this->Nmsmonitor->Snmpmrtg->set(array(
-                    'user_id'  =>  $this->Auth->user('id'),
-                    'snmp_ip'        =>  $this->request->data['Nmsmonitor']['deviceip'] ,
-                    'snmp_status'    => $this->request->data['Nmsmonitor']['devicestatus'],
-                    ));
-                $this->Nmsmonitor->Snmpmrtg->save();
+                #$mrtg = $this->Nmsmonitor->read(null,  $id) ;
+                #$this->Nmsmonitor->Snmpmrtg->read(null,  $mrtg['Snmpmrtg']['id'] ) ;
+                #$this->Nmsmonitor->Snmpmrtg->set(array(
+                #    'user_id'  =>  $this->Auth->user('id'),
+                #    'snmp_ip'        =>  $this->request->data['Nmsmonitor']['deviceip'] ,
+                #    'snmp_status'    => $this->request->data['Nmsmonitor']['devicestatus'],
+                #    ));
+                #$this->Nmsmonitor->Snmpmrtg->save();
                 
                 $this->Session->setFlash(__('The device has been saved'), 'flash_success');
                 return $this->redirect(array('action' => 'index'));
